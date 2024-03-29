@@ -172,3 +172,9 @@
     ); /*30px is half of 60px gap to make transformation smoother*/
   }
 }
+
+.wave {
+  background-image: url("../../assets/esti/wave.svg");
+  height: 42px;
+  background-color: #fffaf6;
+}

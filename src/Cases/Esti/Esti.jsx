@@ -804,7 +804,13 @@ export function Esti() {
                 flexDirection: "column",
               }}
             >
-              <video width="300" height="648" controls loop autoPlay={true}>
+              <video
+                width="300"
+                controls
+                loop
+                autoPlay={true}
+                style={{ borderRadius: "8px", border: "1px solid" }}
+              >
                 <source src={videoMp4} type="video/mp4" />
                 <source src={videoWebm} type="video/webm" />
                 <source src={videoOgg} type="video/ogg" />
@@ -849,6 +855,7 @@ export function Esti() {
           <div style={{ marginBottom: 130 }} />
         </div>
       </div>
+      <div className={classes.wave} />
       <Footer color={colors.lightGreen} />
     </>
   );

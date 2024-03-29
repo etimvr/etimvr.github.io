@@ -12,6 +12,7 @@ export function MainPage() {
       <Content />
       <div className={classes.wave} />
       <AboutMe />
+      <div className={classes.wave} style={{ transform: "rotate(180deg)" }} />
       <Footer color={colors.darkGreen} />
     </>
   );
