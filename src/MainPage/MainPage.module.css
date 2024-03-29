@@ -1,6 +1,5 @@
-
-.wave{
-    background-image: url('../assets/main/wave.svg');
-    height: 42px;
-    background-color: #fffaf6;
+.wave {
+  background-image: url("../assets/main/wave.svg");
+  height: 42px;
+  background-color: #fffaf6;
 }

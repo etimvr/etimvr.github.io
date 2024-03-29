@@ -1,19 +1,18 @@
 .tag {
-    display: inline-block;
-    padding: 8px 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 8px;
-    border: 2px solid;
-    background: white;
-
+  display: inline-block;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid;
+  background: white;
 }
 
 .text {
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
 }

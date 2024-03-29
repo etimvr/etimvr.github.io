@@ -1,63 +1,72 @@
 .button {
-    padding: 12px 18px;
-    border-radius: 12px;
-    border: 2px solid;
-    box-shadow: 0 2px 0 0 #141414, 2px 2px 0 0 #262626;
-    gap: 10px;
-    background-color: white;
-    display: flex;
-    cursor: pointer;
-    width: fit-content;
-    position: relative;
-    overflow: hidden; /* Ensures the expanding circle stays within button boundaries */
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 2px solid;
+  box-shadow:
+    0 2px 0 0 #141414,
+    2px 2px 0 0 #262626;
+  gap: 10px;
+  background-color: white;
+  display: flex;
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+  overflow: hidden; /* Ensures the expanding circle stays within button boundaries */
 }
 
-.button::after { /* .button::after = circle basically */
-    content: '';
-    position: absolute;
-    background-color: #FAA57B;
-    border-radius: 50%;
-    width: 15%;
-    height: 30%;
-    opacity: 0;
-    bottom: 0;
-    left: 50%;
-    transition: transform 0.35s ease-out, opacity 0.35s ease-out;
-    animation: unExpandCircle 0.35s ease-out forwards;
+/* .button::after = circle basically */
+.button::after {
+  content: "";
+  position: absolute;
+  background-color: #faa57b;
+  border-radius: 50%;
+  width: 15%;
+  height: 30%;
+  opacity: 0;
+  bottom: 0;
+  left: 50%;
+  transition:
+    transform 0.35s ease-out,
+    opacity 0.35s ease-out;
+  animation: unExpandCircle 0.35s ease-out forwards;
 }
 
 .button:hover::after {
-    opacity: 1;
-    z-index: 0;
-    animation: expandCircle 0.35s ease-out forwards; /* Animation to expand the circle */
+  opacity: 1;
+  z-index: 0;
+  animation: expandCircle 0.35s ease-out forwards; /* Animation to expand the circle */
 }
 
 .button:active {
-    box-shadow: 4px 4px 0 0 #262626, 4px 4px 0 0 #262626, 2px 2px 0 0 #262626, 0 2px 0 0 #262626;
+  box-shadow:
+    4px 4px 0 0 #262626,
+    4px 4px 0 0 #262626,
+    2px 2px 0 0 #262626,
+    0 2px 0 0 #262626;
 }
 
 @keyframes expandCircle {
-    0% {
-        transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
-    }
-    100% {
-        transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
-    }
+  0% {
+    transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
+  }
 }
 
 @keyframes unExpandCircle {
-    0% {
-        transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
-    }
-    100% {
-        transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
-    }
+  0% {
+    transform: translateX(-50%) translateY(-50%) scale(10); /* End at center */
+  }
+  100% {
+    transform: translateX(-50%) translateY(100%) scale(0.1); /* Start from bottom center */
+  }
 }
 
 .text {
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
 }

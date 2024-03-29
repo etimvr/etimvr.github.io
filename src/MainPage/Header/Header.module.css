@@ -1,33 +1,33 @@
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
 }
 
 .appbar {
-    display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1420px;
-    width: 100%;
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1420px;
+  width: 100%;
 }
 
 .rightSide {
-    display: flex;
-    gap: 42px;
-    align-items: center;
+  display: flex;
+  gap: 42px;
+  align-items: center;
 }
 
 .clickableText {
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
-    cursor: pointer;
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .clickableText:hover {
-    font-weight: 500;
+  font-weight: 500;
 }

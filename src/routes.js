@@ -1,7 +1,7 @@
 export const routes = {
-    main: '/',
-    esti: '/esti/',
-    prequel: '/prequel/',
-    admin: '/admin/',
-    otherWorks: '/other/',
-}
+  main: "/",
+  esti: "/esti/",
+  prequel: "/prequel/",
+  admin: "/admin/",
+  otherWorks: "/other/",
+};

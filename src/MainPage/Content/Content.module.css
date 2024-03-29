@@ -1,77 +1,77 @@
 .mainPage {
-    background-color: #81B769;
-    padding-top: 195px;
-    padding-bottom: 170px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  background-color: #81b769;
+  padding-top: 195px;
+  padding-bottom: 170px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .inner {
-    max-width: 1674px;
+  max-width: 1674px;
 }
 
 .text1 {
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 12px;
-    position: relative;
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 12px;
+  position: relative;
 }
 
 .text2 {
-    font-family: DynaPuff;
-    font-size: 100px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 24px;
-    position: relative;
+  font-family: DynaPuff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 24px;
+  position: relative;
 }
 
 .text3 {
-    font-family: "IBM Plex Mono";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    margin-bottom: 44px;
-    position: relative;
+  font-family: "IBM Plex Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 44px;
+  position: relative;
 }
 
 .cloud {
-    position: absolute;
-    right: calc(50% + 554px);
-    top: 263px;
-    @media (max-width: 1919px) {
-        left: 3.38%;
-    }
+  position: absolute;
+  right: calc(50% + 554px);
+  top: 263px;
+  @media (max-width: 1919px) {
+    left: 3.38%;
+  }
 }
 
 .flowers {
-    position: absolute;
-    left: calc(50% + 590px);
-    top: 400px;
+  position: absolute;
+  left: calc(50% + 590px);
+  top: 400px;
 }
 
 .hearts {
-    position: absolute;
-    right: calc(50% + 358px);
-    top: 490px;
+  position: absolute;
+  right: calc(50% + 358px);
+  top: 490px;
 }
 
 .product {
-    position: absolute;
-    left: calc(50% + 484px);
-    top: 315px;
+  position: absolute;
+  left: calc(50% + 484px);
+  top: 315px;
 }
 
 .star {
-    position: absolute;
-    left: calc(50% + 447px);
-    top: 605px;
+  position: absolute;
+  left: calc(50% + 447px);
+  top: 605px;
 }
 
 .buttons {
-    gap: 24px;
-    display: inline-flex;
+  gap: 24px;
+  display: inline-flex;
 }
