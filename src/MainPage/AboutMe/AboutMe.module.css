@@ -22,8 +22,10 @@
 }
 
 .picture3 {
-    padding-bottom: 32px;
+    margin-bottom: 16px;
+    border-radius: 12px;
 }
+
 
 .header {
     font-family: DynaPuff;
@@ -77,7 +79,7 @@
 }
 
 .skillsTable {
-    gap: 10px;
+    gap: 16px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -118,4 +120,169 @@
 
 .work {
     max-width: 700px;
+}
+
+
+.esti {
+    width: 700px;
+    height: 450px;
+    background-image: url('../../assets/works/esti.png');
+    border-radius: 12px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: hideEstiHover 0.15s forwards;
+}
+
+.esti:hover {
+    background-image: url('../../assets/works/hover-esti.png');
+    background-size: auto 415px;
+    background-position: center 35px;
+    cursor: pointer;
+    animation: showHover1 0.3s forwards;
+}
+
+@keyframes hideEstiHover {
+    0% {
+        opacity: 1;
+        background-size: auto 415px;
+        background-image: url('../../assets/works/hover-esti.png');
+        background-position: center 35px;
+    }
+    99% {
+        opacity: 0.1;
+        background-size: auto 373.5px;
+        background-image: url('../../assets/works/hover-esti.png');
+        background-position: center 35px;
+    }
+    100% {
+        opacity: 1;
+        background-size: auto 100%;
+        background-image: url('../../assets/works/esti.png');
+        background-position: center center;
+    }
+}
+
+
+.prequel {
+    width: 700px;
+    height: 450px;
+    background-image: url('../../assets/works/prequel.png');
+    border-radius: 12px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: hidePrequelHover 0.15s forwards;
+}
+
+.prequel:hover {
+    background-image: url('../../assets/works/hover-prequel.png');
+    background-size: auto 415px;
+    background-position: center 35px;
+    cursor: pointer;
+    animation: showHover1 0.3s forwards;
+}
+
+@keyframes hidePrequelHover {
+    0% {
+        opacity: 1;
+        background-size: auto 415px;
+        background-image: url('../../assets/works/hover-prequel.png');
+        background-position: center 35px;
+    }
+    99% {
+        opacity: 0.1;
+        background-size: auto 373.5px;
+        background-image: url('../../assets/works/hover-prequel.png');
+        background-position: center 35px;
+    }
+    100% {
+        opacity: 1;
+        background-size: auto 100%;
+        background-image: url('../../assets/works/prequel.png');
+        background-position: center center;
+    }
+}
+
+
+@keyframes showHover1 {
+    0% {
+        opacity: 0;
+        background-size: auto 373.5px;
+    }
+    100% {
+        opacity: 1;
+        background-size: auto 415px;
+    }
+}
+
+.admin {
+    width: 700px;
+    height: 450px;
+    background-image: url('../../assets/works/admin.png');
+    border-radius: 12px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: hideAdminHover 0.15s forwards;
+}
+
+.admin:hover {
+    background-image: url('../../assets/works/hover-admin.png');
+    cursor: pointer;
+    animation: showHover2 0.3s forwards;
+}
+
+@keyframes hideAdminHover {
+    0% {
+        opacity: 1;
+        background-image: url('../../assets/works/hover-admin.png');
+    }
+    99% {
+        opacity: 0.1;
+        background-image: url('../../assets/works/hover-admin.png');
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../../assets/works/admin.png');
+    }
+}
+
+
+.other {
+    width: 700px;
+    height: 450px;
+    background-image: url('../../assets/works/other.png');
+    border-radius: 12px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: hideOtherHover 0.15s forwards;
+}
+
+.other:hover {
+    background-image: url('../../assets/works/hover-other.png');
+    cursor: pointer;
+    animation: showHover2 0.3s forwards;
+}
+
+@keyframes hideOtherHover {
+    0% {
+        opacity: 1;
+        background-image: url('../../assets/works/hover-other.png');
+    }
+    99% {
+        opacity: 0.1;
+        background-image: url('../../assets/works/hover-other.png');
+    }
+    100% {
+        opacity: 1;
+        background-image: url('../../assets/works/other.png');
+    }
+}
+
+
+@keyframes showHover2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -16,7 +16,11 @@ export function Header(props) {
     return (
         <div className={classes.header} style={{backgroundColor: color}} id="header">
             <div className={classes.appbar}>
-                <div className={classes.text}>ALEKSANDRA S.</div>
+                <div className={classes.clickableText} onClick={async () => {
+                    await navigate(routes.main);
+                    window.scrollTo(0, 0);
+                }}>ALEKSANDRA S.
+                </div>
                 <div className={classes.rightSide}>
                     <div className={classes.clickableText} onClick={async () => {
                         await navigate(routes.main);

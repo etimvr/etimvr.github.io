@@ -22,11 +22,6 @@
     align-items: center;
 }
 
-.text {
-    font-family: "IBM Plex Mono";
-    font-size: 20px;
-}
-
 .clickableText {
     font-family: "IBM Plex Mono";
     font-size: 20px;

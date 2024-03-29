@@ -29,7 +29,9 @@ import star2 from "../../assets/esti/star2.svg";
 import star3 from "../../assets/esti/star3.svg";
 import before1 from "../../assets/esti/before1.png";
 import before2 from "../../assets/esti/before2.png";
-import video from "../../assets/esti/esti-video.ogg";
+import videoOgg from "../../assets/esti/esti-video.ogg";
+import videoMp4 from "../../assets/esti/esti-video.mp4";
+import videoWebm from "../../assets/esti/esti-video.webm";
 import weirdThing from "../../assets/esti/weird-thing.svg";
 import {Button} from "../../components/Button/Button.jsx";
 import arrowUp from "../../assets/common/arrow-up.svg";
@@ -126,6 +128,7 @@ export function Esti() {
                     <div className={classes.outer}>
                         <div className={classes.carousel}>
                             {images.map((image, index) => <img src={image} key={index}
+                                                               style={{borderRadius: '8px'}}
                                                                alt={`Carousel ${index}`}></img>)}
                             {/*duplicate is needed for smooth transition*/}
                             {images.map((image, index) => <img src={image} key={index}
@@ -403,7 +406,7 @@ export function Esti() {
                         </div>
                     </div>
                     <div style={{marginBottom: 64}}/>
-                    <div className={classes.text6}>After conducting research, I focused on the following points:</div>
+                    <div className={classes.text7}>After conducting research, I focused on the following points:</div>
                     <div style={{marginBottom: 32}}/>
                     <div className={classes.points}>
                         <div style={{display: 'flex', gap: '16px', alignItems: 'center'}}>
@@ -524,7 +527,9 @@ export function Esti() {
                         </div>
                         <div style={{display: 'flex', alignSelf: 'center', flexDirection: 'column'}}>
                             <video width="300" height="648" controls loop autoPlay={true}>
-                                <source src={video} type="video/ogg"/>
+                                <source src={videoMp4} type="video/mp4"/>
+                                <source src={videoWebm} type="video/webm"/>
+                                <source src={videoOgg} type="video/ogg"/>
                             </video>
                             <div style={{marginBottom: 16}}/>
                             <div className={classes.text5}>After</div>

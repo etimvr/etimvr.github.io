@@ -4,19 +4,17 @@ import goose from "../../assets/main/goose.png";
 import ramen from "../../assets/main/ramen.png";
 import bubbleTea from "../../assets/main/bubble-tea.png";
 import chess from "../../assets/main/chess.png";
-import admin from "../../assets/works/admin.png";
-import esti from "../../assets/works/esti.png";
-import otherWorks from "../../assets/works/other-works.png";
-import prequel from "../../assets/works/prequel.png";
 import {Tag} from "../../components/Tag/Tag.jsx";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {routes} from "../../routes.js";
 import heart from "../../assets/main/heart.svg";
 import flower from "../../assets/main/flower.svg";
 import arrow from "../../assets/main/yellow-arrow.svg";
 import dot from "../../assets/main/dot.svg";
+import {colors} from "../../colors.js";
 
 export function AboutMe() {
+    const navigate = useNavigate();
 
     return (
         <div className={classes.aboutMe}>
@@ -52,7 +50,7 @@ export function AboutMe() {
                             <Tag>Graphic Design</Tag>
                             <Tag>3D Illustrations</Tag>
                         </div>
-                        <div style={{position: 'absolute', marginLeft: '765px', marginTop: '-80px'}}><img src={flower}
+                        <div style={{position: 'absolute', marginLeft: '785px', marginTop: '-90px'}}><img src={flower}
                                                                                                           alt="flower"/>
                         </div>
                     </div>
@@ -68,14 +66,12 @@ export function AboutMe() {
                                 <img src={dot} alt="dot"/>
                             </div>
                             <div>
-                                <div className={classes.text5}>Prequel • Senior Product Designer • 12.2022 - present
+                                <div className={classes.text5}>Prequel • Senior Product Designer • Jan 2023 - present
                                 </div>
                                 <div style={{marginBottom: 16}}/>
                                 <div className={classes.text6}>Part of the design team that completely redesigned,
-                                    crafted and
-                                    shipped the brand new experience for Prequel's numerous products (Prequel, Gio, Oji,
-                                    Esti)
-                                    that’s used by over 5 million people across the world.
+                                    crafted and shipped the brand new experience for Prequel's numerous products
+                                    (Prequel, Gio, Oji, Esti) that’s used by over 5 million people across the world.
                                 </div>
                             </div>
                         </div>
@@ -86,12 +82,11 @@ export function AboutMe() {
                                 <img src={dot} alt="dot"/>
                             </div>
                             <div>
-                                <div className={classes.text5}>TechWings • Senior Product Designer • 11.2020 - 12.2022
+                                <div className={classes.text5}>TechWings • Senior Product Designer • Nov 2020 - Dec 2022
                                 </div>
                                 <div style={{marginBottom: 16}}/>
                                 <div className={classes.text6}>Worked as a product designer, contributing to several
-                                    branding
-                                    and visual design projects for different clients.
+                                    branding and visual design projects for different clients.
                                 </div>
                             </div>
                         </div>
@@ -102,13 +97,11 @@ export function AboutMe() {
                                 <img src={dot} alt="dot"/>
                             </div>
                             <div>
-                                <div className={classes.text5}>QLab • UI / UX Designer • 04.2019 - 12.2020</div>
+                                <div className={classes.text5}>QLab • UI / UX Designer • Apr 2019 - Oct 2020</div>
                                 <div style={{marginBottom: 16}}/>
                                 <div className={classes.text6}>Was part of design team in charge of refining our design
-                                    system
-                                    for accessibility, defining guidelines for use, documenting design guidelines and
-                                    educating
-                                    design team.
+                                    system for accessibility, defining guidelines for use, documenting design guidelines
+                                    and educating design team.
                                 </div>
                             </div>
                         </div>
@@ -122,7 +115,8 @@ export function AboutMe() {
                         <div style={{marginBottom: 32}}/>
                         <div className={classes.text6}>CustDev, User Testing, Jobs-To-Be-Done, Journey Mapping, iOS /
                             Android Interface Principles, Effective MVP Engineering, Product Architecture, Figma,
-                            Sketch, Principle, ProtoPie, Photoshop, Illustrator, After Effects, C4D, Blender.
+                            Sketch, Principle, ProtoPie, Photoshop, Illustrator, After Effects, C4D, Blender, Spline,
+                            Notion.
                         </div>
                         <div style={{marginBottom: 32}}/>
 
@@ -170,11 +164,14 @@ export function AboutMe() {
                 <div style={{marginBottom: 70}}/>
                 <div className={classes.works}>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.esti}
-                                                                onClick={() => window.scrollTo(0, 0)}><img src={esti}
-                                                                                                           alt="esti"
-                                                                                                           width="700"
-                                                                                                           height="450"/></Link>
+                        <div className={classes.picture3} style={{backgroundColor: colors.beige}}>
+                            <div
+                                className={classes.esti}
+                                onClick={async() => {
+                                    await navigate(routes.esti);
+                                    window.scrollTo(0, 0)
+                                }}
+                            />
                         </div>
                         <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
                         <div style={{marginBottom: 8}}/>
@@ -184,11 +181,14 @@ export function AboutMe() {
                         <div style={{marginBottom: 20}}/>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.prequel}
-                                                                onClick={() => window.scrollTo(0, 0)}><img src={prequel}
-                                                                                                           alt="prequel"
-                                                                                                           width="700"
-                                                                                                           height="450"/></Link>
+                        <div className={classes.picture3} style={{backgroundColor: colors.black}}>
+                            <div
+                                className={classes.prequel}
+                                onClick={async() => {
+                                    await navigate(routes.prequel);
+                                    window.scrollTo(0, 0)
+                                }}
+                            />
                         </div>
                         <div className={classes.text3}>Prequel: Photo & Video Editor</div>
                         <div style={{marginBottom: 8}}/>
@@ -198,11 +198,14 @@ export function AboutMe() {
                         <div style={{marginBottom: 20}}/>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.adminPanel}
-                                                                onClick={() => window.scrollTo(0, 0)}><img src={admin}
-                                                                                                           alt="admin"
-                                                                                                           width="700"
-                                                                                                           height="450"/></Link>
+                        <div className={classes.picture3} style={{backgroundColor: colors.lightBlue}}>
+                            <div
+                                className={classes.admin}
+                                onClick={async() => {
+                                    await navigate(routes.admin);
+                                    window.scrollTo(0, 0)
+                                }}
+                            />
                         </div>
                         <div className={classes.text3}>Admin Panel / Web</div>
                         <div style={{marginBottom: 8}}/>
@@ -211,9 +214,15 @@ export function AboutMe() {
                         </div>
                     </div>
                     <div className={classes.work}>
-                        <div className={classes.picture3}><Link to={routes.otherWorks}
-                                                                onClick={() => window.scrollTo(0, 0)}><img
-                            src={otherWorks} alt="other-works" width="700" height="450"/></Link></div>
+                        <div className={classes.picture3} style={{backgroundColor: colors.lightRed}}>
+                            <div
+                                className={classes.other}
+                                onClick={async() => {
+                                    await navigate(routes.otherWorks);
+                                    window.scrollTo(0, 0)
+                                }}
+                            />
+                        </div>
                         <div className={classes.text3}>Other works...</div>
                         <div style={{marginBottom: 8}}/>
                         <div className={classes.text6}>Here is a collection of various projects on different themes for

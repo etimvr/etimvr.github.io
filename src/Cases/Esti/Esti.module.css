@@ -46,7 +46,7 @@
 .videoBox {
     display: flex;
     width: 100%;
-    padding: 60px 150px 100px 150px;
+    padding: 60px 150px 60px 150px;
     flex-direction: row;
     gap: 150px;
     border-radius: 12px;
