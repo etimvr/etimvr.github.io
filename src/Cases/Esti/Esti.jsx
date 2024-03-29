@@ -128,10 +128,11 @@ export function Esti() {
                     <div className={classes.outer}>
                         <div className={classes.carousel}>
                             {images.map((image, index) => <img src={image} key={index}
-                                                               style={{borderRadius: '8px'}}
+                                                               className={classes.image}
                                                                alt={`Carousel ${index}`}></img>)}
-                            {/*duplicate is needed for smooth transition*/}
-                            {images.map((image, index) => <img src={image} key={index}
+                            {/*duplicate is needed for smooth transition, more context in @keyframes bannermove*/}
+                            {images.map((image, index) => <img src={image} key={images.length + index}
+                                                               className={classes.image}
                                                                alt={`Carousel ${index}`}></img>)}
                         </div>
                     </div>
