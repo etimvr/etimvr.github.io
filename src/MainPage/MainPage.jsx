@@ -3,17 +3,24 @@ import { AboutMe } from "./AboutMe/AboutMe.jsx";
 import { Header } from "./Header/Header.jsx";
 import { Footer } from "./Footer/Footer.jsx";
 import { colors } from "../colors.js";
-import classes from "./MainPage.module.css";
+import { Wave } from "../components/Wave/Wave.jsx";
 
 export function MainPage() {
   return (
     <>
-      <Header color={colors.darkGreen} />
+      <Header color={colors.greenCucumber} />
       <Content />
-      <div className={classes.wave} />
+      <Wave
+        waveColor={colors.greenCucumber}
+        backgroundColor={colors.whiteSoap}
+        isRevert
+      />
       <AboutMe />
-      <div className={classes.wave} style={{ transform: "rotate(180deg)" }} />
-      <Footer color={colors.darkGreen} />
+      <Wave
+        waveColor={colors.greenCucumber}
+        backgroundColor={colors.whiteSoap}
+      />
+      <Footer color={colors.greenCucumber} />
     </>
   );
 }

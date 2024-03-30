@@ -26,7 +26,7 @@ import arrow3 from "../../assets/esti/arrow3.svg";
 import stars from "../../assets/esti/stars.svg";
 import star from "../../assets/esti/star.svg";
 import star2 from "../../assets/esti/star2.svg";
-import star3 from "../../assets/esti/star3.svg";
+import bulletStar from "../../assets/common/bullet-star.svg";
 import before1 from "../../assets/esti/before1.png";
 import before2 from "../../assets/esti/before2.png";
 import videoOgg from "../../assets/esti/esti-video.ogg";
@@ -41,13 +41,16 @@ import { colors } from "../../colors.js";
 import { useNavigate } from "react-router-dom";
 import { routes } from "../../routes.js";
 import images from "./images.jsx";
+import { Wave } from "../../components/Wave/Wave.jsx";
+import { ProjectInfo } from "../../components/ProjectInfo/ProjectInfo.jsx";
+import { WhatIDid } from "../../components/WhatIDid/WhatIDid.jsx";
 
 export function Esti() {
   const navigate = useNavigate();
 
   return (
     <>
-      <Header color={colors.milkWhite} />
+      <Header color={colors.whiteIvory} />
       <div className={classes.page}>
         <div className={classes.inner}>
           <div
@@ -75,43 +78,33 @@ export function Esti() {
             <img src={intro} alt="intro" width={1420} />
           </div>
           <div style={{ marginBottom: 79 }} />
-          <div className={classes.columns}>
-            <div>
-              <div className={classes.text3}>My Role</div>
-              <div style={{ marginBottom: 32 }} />
-              <div className={classes.text4}>Senior Product Designer</div>
-            </div>
-            <div>
-              <div className={classes.text3}>Platform</div>
-              <div style={{ marginBottom: 32 }} />
-              <div className={classes.text4}>iOS / Web</div>
-            </div>
-            <div>
-              <div className={classes.text3}>My Team</div>
-              <div style={{ marginBottom: 32 }} />
-              <div className={classes.teamShortlist}>
-                <div className={classes.text4}>1 Designer</div>
-                <div className={classes.text4}>5 Engineers</div>
-                <div className={classes.text4}>2 Product Managers</div>
-                <div className={classes.text4}>2 Product Analysts</div>
-                <div className={classes.text4}>2 UX Researchers</div>
-              </div>
-            </div>
-          </div>
+          <ProjectInfo
+            role={"Senior Product Designer"}
+            platform={"iOS / Web"}
+            team={[
+              "1 Designer",
+              "5 Engineers",
+              "2 Product Managers",
+              "2 Product Analysts",
+              "2 UX Researchers",
+            ]}
+          />
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.box}>
-            <div className={classes.text3}>What I did?</div>
-            <div className={classes.text2}>
-              On this project I worked as a product designer, handling various
-              tasks including UX & UI design, prototyping, user interviewing,
-              research and usability testing. This role demanded adaptability as
-              I explored different aspects of product development.
-              <br />
-              <br />I collaborated with founders, product managers, marketing
-              team, research team, development and analytics team.
-            </div>
-          </div>
-          <div style={{ marginBottom: 148 }} />
+          <WhatIDid
+            color={colors.greenRock}
+            text={
+              <>
+                On this project I worked as a product designer, handling various
+                tasks including UX & UI design, prototyping, user interviewing,
+                research and usability testing. This role demanded adaptability
+                as I explored different aspects of product development.
+                <br />
+                <br />I collaborated with founders, product managers, marketing
+                team, research team, development and analytics team.
+              </>
+            }
+          />
+          <div style={{ marginBottom: 100 }} />
           <div
             style={{
               position: "absolute",
@@ -168,7 +161,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.columns}>
-            <div>
+            <div style={{ width: "700px" }}>
               <div className={classes.text7}>Problems</div>
               <div style={{ marginBottom: 32 }} />
               <div className={classes.text2}>
@@ -178,7 +171,7 @@ export function Esti() {
                 their posts.
               </div>
             </div>
-            <div>
+            <div style={{ width: "700px" }}>
               <div
                 style={{
                   position: "absolute",
@@ -322,33 +315,33 @@ export function Esti() {
           <div style={{ marginBottom: 42 }} />
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
-              <img src={star3} height={24} alt="star" />
+              <img src={bulletStar} height={24} alt="star" />
               <div className={classes.text2}>
                 What are your thoughts on having a planner features in the photo
                 editor?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              <img src={star3} height={24} alt="star" />
+              <img src={bulletStar} height={24} alt="star" />
               <div className={classes.text2}>
                 Do you understand how to use it?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              <img src={star3} height={24} alt="star" />
+              <img src={bulletStar} height={24} alt="star" />
               <div className={classes.text2}>
                 Do you recognize what the calendar icon represents?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              <img src={star3} height={24} alt="star" />
+              <img src={bulletStar} height={24} alt="star" />
               <div className={classes.text2}>
                 Do you understand the preview of the photo on the date in the
                 calendar?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              <img src={star3} height={24} alt="star" />
+              <img src={bulletStar} height={24} alt="star" />
               <div className={classes.text2}>
                 Do you understand when the photo was posted to the Instagram?
               </div>
@@ -530,7 +523,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightGreen,
+                backgroundColor: colors.greenOlivine,
               }}
             >
               <div className={classes.text6} style={{ color: colors.white }}>
@@ -545,7 +538,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightLightGreen,
+                backgroundColor: colors.greenRock,
               }}
             >
               <div className={classes.text6}>2/5</div>
@@ -558,7 +551,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightGreen,
+                backgroundColor: colors.greenOlivine,
               }}
             >
               <div className={classes.text6} style={{ color: colors.white }}>
@@ -660,7 +653,7 @@ export function Esti() {
               marginTop: "-25px",
             }}
           >
-            <img src={star3} alt="star3" />
+            <img src={bulletStar} alt="star" />
           </div>
           <div
             className={classes.text6}
@@ -689,7 +682,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightGreen,
+                backgroundColor: colors.greenOlivine,
               }}
             >
               <div className={classes.text6} style={{ color: colors.white }}>
@@ -705,7 +698,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightLightGreen,
+                backgroundColor: colors.greenRock,
               }}
             >
               <div className={classes.text6}>2/5</div>
@@ -719,7 +712,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightGreen,
+                backgroundColor: colors.greenOlivine,
               }}
             >
               <div className={classes.text6} style={{ color: colors.white }}>
@@ -735,7 +728,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightLightGreen,
+                backgroundColor: colors.greenRock,
               }}
             >
               <div className={classes.text6}>2/5</div>
@@ -749,7 +742,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightGreen,
+                backgroundColor: colors.greenOlivine,
               }}
             >
               <div className={classes.text6} style={{ color: colors.white }}>
@@ -765,7 +758,7 @@ export function Esti() {
               className={classes.box2}
               style={{
                 textAlign: "center",
-                backgroundColor: colors.lightLightGreen,
+                backgroundColor: colors.greenRock,
               }}
             >
               <div className={classes.text6}>1/5</div>
@@ -781,7 +774,7 @@ export function Esti() {
             className={classes.videoBox}
             style={{
               textAlign: "center",
-              backgroundColor: colors.lightLightGreen,
+              backgroundColor: colors.greenRock,
             }}
           >
             <div
@@ -847,6 +840,7 @@ export function Esti() {
               icon={arrowUp}
               onClick={() => {
                 navigate(routes.prequel);
+                window.scrollTo(0, 0);
               }}
             >
               NEXT CASE
@@ -855,8 +849,11 @@ export function Esti() {
           <div style={{ marginBottom: 130 }} />
         </div>
       </div>
-      <div className={classes.wave} />
-      <Footer color={colors.lightGreen} />
+      <Wave
+        waveColor={colors.greenOlivine}
+        backgroundColor={colors.whiteSoap}
+      />
+      <Footer color={colors.greenOlivine} />
     </>
   );
 }

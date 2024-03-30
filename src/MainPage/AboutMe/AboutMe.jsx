@@ -251,7 +251,7 @@ export function AboutMe() {
           <div className={classes.work}>
             <div
               className={classes.picture3}
-              style={{ backgroundColor: colors.black }}
+              style={{ backgroundColor: colors.blackMine }}
             >
               <div
                 className={classes.prequel}
@@ -292,7 +292,7 @@ export function AboutMe() {
           <div className={classes.work}>
             <div
               className={classes.picture3}
-              style={{ backgroundColor: colors.lightRed }}
+              style={{ backgroundColor: colors.pink }}
             >
               <div
                 className={classes.other}

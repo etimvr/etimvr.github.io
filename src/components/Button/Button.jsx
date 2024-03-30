@@ -5,13 +5,18 @@ Button.propTypes = {
   icon: PropTypes.any,
   onClick: PropTypes.any,
   children: PropTypes.string,
+  isIconOnLeftSide: PropTypes.bool,
 };
 
 export function Button(props) {
-  const { icon, children, onClick } = props;
+  const { icon, children, onClick, isIconOnLeftSide = false } = props;
 
   return (
-    <div className={classes.button} onClick={onClick}>
+    <div
+      className={classes.button}
+      onClick={onClick}
+      style={{ flexDirection: isIconOnLeftSide ? "row-reverse" : "row" }}
+    >
       <div className={classes.text} style={{ zIndex: 1 }}>
         {children}
       </div>
