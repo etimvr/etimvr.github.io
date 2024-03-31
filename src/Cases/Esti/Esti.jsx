@@ -851,7 +851,7 @@ export function Esti() {
       </div>
       <Wave
         waveColor={colors.greenOlivine}
-        backgroundColor={colors.whiteSoap}
+        backgroundColor={colors.whiteIvory}
       />
       <Footer color={colors.greenOlivine} />
     </>

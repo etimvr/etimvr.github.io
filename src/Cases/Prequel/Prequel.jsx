@@ -1066,7 +1066,10 @@ export function Prequel() {
           <div style={{ marginBottom: 130 }} />
         </div>
       </div>
-      <Wave waveColor={colors.blueAnakiwa} backgroundColor={colors.whiteSoap} />
+      <Wave
+        waveColor={colors.blueAnakiwa}
+        backgroundColor={colors.whiteIvory}
+      />
       <Footer color={colors.blueAnakiwa} />
     </>
   );
