@@ -24,6 +24,25 @@ import screen5 from "../../assets/prequel/screen5.png";
 import screen6 from "../../assets/prequel/screen6.png";
 import screen7 from "../../assets/prequel/screen7.png";
 import arrow from "../../assets/prequel/arrow.svg";
+import arrow1 from "../../assets/prequel/arrow1.svg";
+import arrow2 from "../../assets/prequel/arrow2.svg";
+import cone from "../../assets/prequel/cone.svg";
+import exclamation from "../../assets/prequel/exclamation.svg";
+import flower from "../../assets/prequel/flower.svg";
+import heart1 from "../../assets/prequel/heart1.svg";
+import heart2 from "../../assets/prequel/heart2.svg";
+import heart3 from "../../assets/prequel/heart3.svg";
+import heart4 from "../../assets/prequel/heart4.svg";
+import heart5 from "../../assets/prequel/heart5.svg";
+import heart6 from "../../assets/prequel/heart6.svg";
+import heart7 from "../../assets/prequel/heart7.svg";
+import hearts from "../../assets/prequel/hearts.svg";
+import lines from "../../assets/prequel/lines.svg";
+import snowflake from "../../assets/prequel/snowflake.svg";
+import star1 from "../../assets/prequel/star1.svg";
+import star2 from "../../assets/prequel/star2.svg";
+import star3 from "../../assets/prequel/star3.svg";
+import star4 from "../../assets/prequel/star4.svg";
 import { Button } from "../../components/Button/Button.jsx";
 import arrowUp from "../../assets/common/arrow-up.svg";
 import arrowUpLeft from "../../assets/common/arrow-up-left.svg";
@@ -38,6 +57,15 @@ export function Prequel() {
 
       <div className={classes.page}>
         <div className={classes.inner}>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "1250px",
+              marginTop: "-20px",
+            }}
+          >
+            <img src={hearts} alt="hearts" />
+          </div>
           <div
             className={classes.text1}
             style={{ zIndex: 2, position: "relative" }}
@@ -82,6 +110,15 @@ export function Prequel() {
           />
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "1115px",
+              marginTop: "-20px",
+            }}
+          >
+            <img src={heart1} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ zIndex: 2, position: "relative", textAlign: "center" }}
           >
@@ -92,6 +129,15 @@ export function Prequel() {
             <img src={inspiration} alt="inspiration" width={1420} />
           </div>
           <div style={{ marginBottom: 100 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "75px",
+              marginTop: "10px",
+            }}
+          >
+            <img src={flower} alt="hearts" />
+          </div>
           <div
             className={classes.text3}
             style={{ zIndex: 2, position: "relative", textAlign: "center" }}
@@ -110,6 +156,15 @@ export function Prequel() {
             tools as contrast and exposure correction.
           </div>
           <div style={{ marginBottom: 64 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "1405px",
+              marginTop: "-100px",
+            }}
+          >
+            <img src={arrow1} alt="hearts" />
+          </div>
 
           <div className={classes.columns}>
             <div style={{ width: "700px" }}>
@@ -136,6 +191,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 64 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "-27px",
+              marginTop: "-27px",
+            }}
+          >
+            <img src={star1} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ zIndex: 2, position: "relative" }}
           >
@@ -161,6 +225,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "275px",
+              marginTop: "-12px",
+            }}
+          >
+            <img src={snowflake} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ zIndex: 2, position: "relative" }}
           >
@@ -173,6 +246,15 @@ export function Prequel() {
             content within the edit and organize tool grouping.
           </div>
           <div style={{ marginBottom: 100 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "-27px",
+              marginTop: "5px",
+            }}
+          >
+            <img src={lines} alt="hearts" />
+          </div>
           <div
             className={classes.text3}
             style={{ zIndex: 2, position: "relative" }}
@@ -274,13 +356,36 @@ export function Prequel() {
             </div>
           </div>
           <div style={{ marginBottom: 32 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "-18px",
+              marginTop: "-5px",
+            }}
+          >
+            <img src={star2} alt="hearts" />
+          </div>
           <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
-            <div className={classes.text7}>Important:</div>
+            <div
+              className={classes.text7}
+              style={{ zIndex: 2, position: "relative" }}
+            >
+              Important:
+            </div>
             <div className={classes.text2}>
               task output = Σ of all criteria.
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "1185px",
+              marginTop: "20px",
+            }}
+          >
+            <img src={arrow2} alt="hearts" />
+          </div>
           <div className={classes.text6}>
             Here you can see some stats from the interviews
           </div>
@@ -315,7 +420,21 @@ export function Prequel() {
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Summary</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "757px",
+              marginTop: "-8px",
+            }}
+          >
+            <img src={heart2} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Summary
+          </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
@@ -347,7 +466,21 @@ export function Prequel() {
           <div style={{ marginBottom: 42 }} />
           <div className={classes.text6}>2. Quantitative research</div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Prequel user personas</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "852px",
+              marginTop: "-25px",
+            }}
+          >
+            <img src={cone} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Prequel user personas
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.personaBox}>
             <div>
@@ -410,6 +543,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "970px",
+              marginTop: "-10px",
+            }}
+          >
+            <img src={heart3} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
@@ -429,8 +571,21 @@ export function Prequel() {
             <img src={screen2} alt="screen2" width={1420} />
           </div>
           <div style={{ marginBottom: 42 }} />
-
-          <div className={classes.text6}>HSL Design</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "760px",
+              marginTop: "-10px",
+            }}
+          >
+            <img src={heart4} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            HSL Design
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen3} alt="screen3" width={1420} />
@@ -444,6 +599,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "788px",
+              marginTop: "-30px",
+            }}
+          >
+            <img src={star1} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
@@ -451,32 +615,44 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.text2} style={{ textAlign: "center" }}>
-            After conducting the A/B test, we noticed an improvement in key
-            metrics and decided to roll out the feature to all users.
+            <span>After conducting the A/B test, we noticed an </span>
+            <span style={{ color: colors.greenOlivine }}>
+              improvement in key metrics
+            </span>
+            <span> and decided to roll out the feature to all users.</span>
           </div>
-          {/*todo add green color for some text ^*/}
           <div style={{ marginBottom: 42 }} />
           <div className={classes.columns}>
             <div className={classes.item}>
               <div className={classes.box}>
                 <div className={classes.text2}>
-                  CR editor &gt; Edit Created -0.41%
+                  <span>CR editor &gt; Edit Created </span>
+                  <span style={{ color: colors.redSunglo }}>-0.41%</span>
                 </div>
                 <div className={classes.text2}>
-                  CR editor &gt; Edit Created With Adjust -0.95%
+                  <span>CR editor &gt; Edit Created With Adjust </span>
+                  <span style={{ color: colors.redSunglo }}>-0.95%</span>
                 </div>
-                <div className={classes.text2}>Edits Per User -3.44%</div>
+                <div className={classes.text2}>
+                  <span>Edits Per User </span>
+                  <span style={{ color: colors.redSunglo }}>-3.44%</span>
+                </div>
               </div>
             </div>
             <div className={classes.item}>
               <div className={classes.box}>
                 <div className={classes.text2}>
-                  CR editor &gt; Edit Created +2.35%
+                  <span>CR editor &gt; Edit Created </span>
+                  <span style={{ color: colors.greenOlivine }}>+2.35%</span>
                 </div>
                 <div className={classes.text2}>
-                  CR editor &gt; Edit Created With Adjust +4.34%
+                  <span>CR editor &gt; Edit Created With Adjust </span>
+                  <span style={{ color: colors.greenOlivine }}>+4.34%</span>
                 </div>
-                <div className={classes.text2}>Edits Per User +1.95%</div>
+                <div className={classes.text2}>
+                  <span>Edits Per User </span>
+                  <span style={{ color: colors.greenOlivine }}>+1.95%</span>
+                </div>
               </div>
             </div>
           </div>
@@ -496,6 +672,15 @@ export function Prequel() {
             Tab bar redesign
           </div>
           <div style={{ marginBottom: 64 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "785px",
+              marginTop: "-20px",
+            }}
+          >
+            <img src={exclamation} alt="hearts" />
+          </div>
           <div className={classes.text6}>Problem</div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.text2}>
@@ -533,7 +718,21 @@ export function Prequel() {
             that I can find the content I need faster.
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Hypotheses</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "785px",
+              marginTop: "-15px",
+            }}
+          >
+            <img src={star1} width={54} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Hypotheses
+          </div>
           <div style={{ marginBottom: 32 }} />
           <div style={{ display: "flex", gap: "16px" }}>
             <img src={bulletStarBlue} width={24} alt="star" />
@@ -596,6 +795,7 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.text7}>Counter Metrics</div>
+          <div style={{ marginBottom: 16 }} />
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
@@ -612,6 +812,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "985px",
+              marginTop: "-10px",
+            }}
+          >
+            <img src={heart5} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
@@ -625,6 +834,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "790px",
+              marginTop: "-25px",
+            }}
+          >
+            <img src={star3} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
@@ -632,8 +850,9 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.text2} style={{ textAlign: "center" }}>
-            The results of the A/B test were very positive, so we decided to
-            roll out feature to all users.
+            <span>The results of the A/B test were </span>
+            <span style={{ color: colors.greenOlivine }}>very positive</span>
+            <span>, so we decided to roll out feature to all users.</span>
           </div>
           <div style={{ marginBottom: 42 }} />
           <div
@@ -641,15 +860,21 @@ export function Prequel() {
             style={{ width: 900, marginLeft: "auto", marginRight: "auto" }}
           >
             <div className={classes.text2}>
-              Photo Edit Created from Discover &gt; +9.45%
+              <span>Photo Edit Created from Discover &gt; </span>
+              <span style={{ color: colors.greenOlivine }}>+9.45%</span>
             </div>
             <div className={classes.text2}>
-              Video Edit Created from Discover &gt; +16.12%
+              <span>Video Edit Created from Discover &gt; </span>
+              <span style={{ color: colors.greenOlivine }}>+16.12%</span>
             </div>
             <div className={classes.text2}>
-              Users who clicked on any tab in the discover &gt; +25.24%
+              <span>Users who clicked on any tab in the discover &gt; </span>
+              <span style={{ color: colors.greenOlivine }}>+25.24%</span>
             </div>
-            <div className={classes.text2}>CR to trial / subsc &gt; +10.8%</div>
+            <div className={classes.text2}>
+              <span>CR to trial / subsc &gt; </span>
+              <span style={{ color: colors.greenOlivine }}>+10.8%</span>
+            </div>
           </div>
           <div style={{ marginBottom: 100 }} />
           <div className={classes.text3} style={{ textAlign: "center" }}>
@@ -665,7 +890,20 @@ export function Prequel() {
             a large number of effects so editor has become crammed and busy.
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Users</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "740px",
+            }}
+          >
+            <img src={heart6} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Users
+          </div>
           <div style={{ marginBottom: 32 }} />
 
           <div className={classes.shortlist}>
@@ -694,7 +932,21 @@ export function Prequel() {
             and filters that suite my editing goal and style.
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Hypotheses</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "785px",
+              marginTop: "-10px",
+            }}
+          >
+            <img src={star3} width={54} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Hypotheses
+          </div>
           <div style={{ marginBottom: 32 }} />
           <div style={{ display: "flex", gap: "16px" }}>
             <img src={bulletStarBlue} width={24} alt="star" />
@@ -705,7 +957,21 @@ export function Prequel() {
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Solution</div>
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "765px",
+              marginTop: "-5px",
+            }}
+          >
+            <img src={star4} alt="hearts" />
+          </div>
+          <div
+            className={classes.text6}
+            style={{ zIndex: 2, position: "relative" }}
+          >
+            Solution
+          </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.text2}>
             As the editor already has numerous tools and options and tabs, I
@@ -716,6 +982,15 @@ export function Prequel() {
             development.
           </div>
           <div style={{ marginBottom: 100 }} />
+          <div
+            style={{
+              position: "absolute",
+              marginLeft: "990px",
+              marginTop: "-5px",
+            }}
+          >
+            <img src={heart7} alt="hearts" />
+          </div>
           <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
@@ -738,6 +1013,15 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
+            style={{
+              position: "absolute",
+              marginLeft: "790px",
+              marginTop: "-25px",
+            }}
+          >
+            <img src={star3} alt="hearts" />
+          </div>
+          <div
             className={classes.text3}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
@@ -745,11 +1029,17 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.text2} style={{ textAlign: "center" }}>
-            The A/B test showed an increase in subscription retention among old
-            users (those who have been in the app for more than 3 months). Our
-            team managed to remove less trendy and refined effects and filters
-            from the main editor without affecting churn rate dramatically and
-            getting low rating from core users on the App Store
+            <span>The A/B test showed an </span>
+            <span style={{ color: colors.greenOlivine }}>
+              increase in subscription retention{" "}
+            </span>
+            <span>
+              among old users (those who have been in the app for more than 3
+              months). Our team managed to remove less trendy and refined
+              effects and filters from the main editor without affecting churn
+              rate dramatically and getting low rating from core users on the
+              App Store
+            </span>
           </div>
           <div style={{ marginBottom: 69 }} />
           <div style={{ justifyContent: "center", display: "flex", gap: 24 }}>

@@ -7,6 +7,7 @@ export const colors = {
   greenOlivine: "#9DB56B",
   greenCucumber: "#81B769",
   greenRock: "#E6E9D3",
+  redSunglo: "#E56D6A",
   orange: "#FAA57B",
   orangeNegroni: "#FFE0C9",
   pink: "#FFC5CE",

@@ -10,13 +10,11 @@ export function Footer(props) {
   const { color } = props;
   return (
     <>
-      {/*todo add wave here*/}
       <div style={{ backgroundColor: color }}>
         <div className={classes.inner}>
           <div className={classes.flower}>
             <img src={flower} alt="footer-flower" />
           </div>
-          {/*todo move flower a bit higher*/}
           <div className={classes.text1}>Get in Touch</div>
           <div style={{ marginBottom: 48 }} />
           <div style={{ display: "flex" }}>

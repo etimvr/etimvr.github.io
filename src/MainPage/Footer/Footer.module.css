@@ -9,6 +9,7 @@
 .flower {
   position: absolute;
   right: calc(50% - 8px);
+  margin-top: -15px;
 }
 
 .text1 {
