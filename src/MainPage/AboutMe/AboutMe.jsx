@@ -1,4 +1,5 @@
 import classes from "./AboutMe.module.css";
+import typography from "../../typography.module.css";
 import portrait from "../../assets/main/portrait.png";
 import goose from "../../assets/main/goose.png";
 import ramen from "../../assets/main/ramen.png";
@@ -19,7 +20,11 @@ export function AboutMe() {
   return (
     <div className={classes.aboutMe}>
       <div className={classes.inner}>
-        <div className={classes.header} id="about-me">
+        <div
+          className={typography.title}
+          style={{ textAlign: "center" }}
+          id="about-me"
+        >
           ABOUT ME
         </div>
         <div style={{ marginBottom: 60 }} />
@@ -38,21 +43,21 @@ export function AboutMe() {
               <img src={heart} alt="heart" />
             </div>
             <div
-              className={classes.text1}
+              className={typography.normalText500}
               style={{ zIndex: 2, position: "relative" }}
             >
               Hey, I’m Sasha, a Senior Product and Visual Designer building
               experiences for Prequel in USA.
             </div>
             <div style={{ marginBottom: 24 }} />
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               More than anything, I thrive amidst ambition, passionate
               curiosity, humility and joy. I seek brave teams where, together,
               we can create lasting and meaningful impact on people's lives, the
               society, and the world we live in.
             </div>
             <div style={{ marginBottom: 48 }} />
-            <div className={classes.text3}>Skills</div>
+            <div className={typography.bigText}>Skills</div>
             <div style={{ marginBottom: 24 }} />
             <div className={classes.skillsTable}>
               <Tag>Product Design</Tag>
@@ -78,7 +83,7 @@ export function AboutMe() {
         <div style={{ marginBottom: 50 }} />
         <div className={classes.verticalSplit}>
           <div className={classes.experience}>
-            <div className={classes.text4}>Experience</div>
+            <div className={typography.bigText}>Experience</div>
             <div style={{ marginBottom: 32 }} />
 
             <div style={{ display: "flex" }}>
@@ -86,11 +91,11 @@ export function AboutMe() {
                 <img src={dot} alt="dot" />
               </div>
               <div>
-                <div className={classes.text5}>
+                <div className={typography.smallText500}>
                   Prequel • Senior Product Designer • Jan 2023 - present
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text6}>
+                <div className={typography.tiny}>
                   Part of the design team that completely redesigned, crafted
                   and shipped the brand new experience for Prequel's numerous
                   products (Prequel, Gio, Oji, Esti) that’s used by over 5
@@ -105,11 +110,11 @@ export function AboutMe() {
                 <img src={dot} alt="dot" />
               </div>
               <div>
-                <div className={classes.text5}>
+                <div className={typography.smallText500}>
                   TechWings • Senior Product Designer • Nov 2020 - Dec 2022
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text6}>
+                <div className={typography.tiny}>
                   Worked as a product designer, contributing to several branding
                   and visual design projects for different clients.
                 </div>
@@ -122,11 +127,11 @@ export function AboutMe() {
                 <img src={dot} alt="dot" />
               </div>
               <div>
-                <div className={classes.text5}>
+                <div className={typography.smallText500}>
                   QLab • UI / UX Designer • Apr 2019 - Oct 2020
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text6}>
+                <div className={typography.tiny}>
                   Was part of design team in charge of refining our design
                   system for accessibility, defining guidelines for use,
                   documenting design guidelines and educating design team.
@@ -137,9 +142,9 @@ export function AboutMe() {
             <div style={{ marginBottom: 32 }} />
           </div>
           <div className={classes.rightSide}>
-            <div className={classes.text4}>Tools & Methods</div>
+            <div className={typography.bigText}>Tools & Methods</div>
             <div style={{ marginBottom: 32 }} />
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               CustDev, User Testing, Jobs-To-Be-Done, Journey Mapping, iOS /
               Android Interface Principles, Effective MVP Engineering, Product
               Architecture, Figma, Sketch, Principle, ProtoPie, Photoshop,
@@ -147,7 +152,7 @@ export function AboutMe() {
             </div>
             <div style={{ marginBottom: 32 }} />
 
-            <div className={classes.text4}>Contacts</div>
+            <div className={typography.bigText}>Contacts</div>
             <div
               style={{
                 position: "absolute",
@@ -158,7 +163,13 @@ export function AboutMe() {
               <img src={arrow} alt="arrow" />
             </div>
             <div style={{ marginBottom: 32 }} />
-            <div className={classes.link}>
+            <div
+              className={typography.smallText500}
+              style={{
+                textDecoration: "underline",
+                textDecorationSkipInk: "none",
+              }}
+            >
               <a
                 href="mailto:sandraovershv@gmail.com"
                 style={{ color: "black" }}
@@ -167,7 +178,13 @@ export function AboutMe() {
               </a>
             </div>
             <div style={{ marginBottom: 16 }} />
-            <div className={classes.link}>
+            <div
+              className={typography.smallText500}
+              style={{
+                textDecoration: "underline",
+                textDecorationSkipInk: "none",
+              }}
+            >
               <a
                 href="https://www.linkedin.com/in/alexandra-shvetsova-20822a221/"
                 style={{ color: "black" }}
@@ -176,7 +193,13 @@ export function AboutMe() {
               </a>
             </div>
             <div style={{ marginBottom: 16 }} />
-            <div className={classes.link}>
+            <div
+              className={typography.smallText500}
+              style={{
+                textDecoration: "underline",
+                textDecorationSkipInk: "none",
+              }}
+            >
               <a href="https://t.me/pressur" style={{ color: "black" }}>
                 Telegram
               </a>
@@ -185,14 +208,14 @@ export function AboutMe() {
           </div>
         </div>
         <div style={{ marginBottom: 40 }} />
-        <div className={classes.text4}>Some facts about me...</div>
+        <div className={typography.bigText}>Some facts about me...</div>
         <div style={{ marginBottom: 32 }} />
         <div className={classes.facts}>
           <div className={classes.fact}>
             <div className={classes.picture2}>
               <img src={goose} alt="goose" />
             </div>
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               It’s my brother pink goose. We’ve been together for 8 years.
             </div>
           </div>
@@ -200,7 +223,7 @@ export function AboutMe() {
             <div className={classes.picture2}>
               <img src={ramen} alt="ramen" />
             </div>
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               My favourite food is spicy noodles with chicken.
             </div>
           </div>
@@ -208,7 +231,7 @@ export function AboutMe() {
             <div className={classes.picture2}>
               <img src={bubbleTea} alt="bubble-tea" />
             </div>
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               Matcha bubble tea is the most delicious drink ever.
             </div>
           </div>
@@ -216,13 +239,17 @@ export function AboutMe() {
             <div className={classes.picture2}>
               <img src={chess} alt="chess" />
             </div>
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               In my free time I’m learning to play chess.
             </div>
           </div>
         </div>
         <div style={{ marginBottom: 100 }} />
-        <div className={classes.header} id="my-work">
+        <div
+          className={typography.title}
+          style={{ textAlign: "center" }}
+          id="my-work"
+        >
           MY WORK
         </div>
         <div style={{ marginBottom: 70 }} />
@@ -240,9 +267,11 @@ export function AboutMe() {
                 }}
               />
             </div>
-            <div className={classes.text3}>Esti: Aesthetic Photo Editor</div>
+            <div className={typography.bigText}>
+              Esti: Aesthetic Photo Editor
+            </div>
             <div style={{ marginBottom: 8 }} />
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               The perfect content creator toolkit: an app with consistent vibes
               in mind.
             </div>
@@ -261,9 +290,11 @@ export function AboutMe() {
                 }}
               />
             </div>
-            <div className={classes.text3}>Prequel: Photo & Video Editor</div>
+            <div className={typography.bigText}>
+              Prequel: Photo & Video Editor
+            </div>
             <div style={{ marginBottom: 8 }} />
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               Photo and video editing app with an easy-to-use creative toolkit,
               aesthetic effects and filters.
             </div>
@@ -272,7 +303,7 @@ export function AboutMe() {
           <div className={classes.work}>
             <div
               className={classes.picture3}
-              style={{ backgroundColor: colors.lightBlue }}
+              style={{ backgroundColor: colors.blueSelago }}
             >
               <div
                 className={classes.admin}
@@ -282,9 +313,9 @@ export function AboutMe() {
                 }}
               />
             </div>
-            <div className={classes.text3}>Admin Panel / Web</div>
+            <div className={typography.bigText}>Admin Panel / Web</div>
             <div style={{ marginBottom: 8 }} />
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               Admin service for internal use by developers, QA engineers and
               content creators.
             </div>
@@ -302,9 +333,9 @@ export function AboutMe() {
                 }}
               />
             </div>
-            <div className={classes.text3}>Other works...</div>
+            <div className={typography.bigText}>Other works...</div>
             <div style={{ marginBottom: 8 }} />
-            <div className={classes.text6}>
+            <div className={typography.tiny}>
               Here is a collection of various projects on different themes for
               the soul and more. ✨
             </div>

@@ -3,6 +3,7 @@ export const colors = {
   whiteIvory: "#FDFFF6",
   whiteSoap: "#FFFAF6",
   beige: "#F6EFE7",
+  blackPrimary: "#262626",
   blackMine: "#252424",
   greenOlivine: "#9DB56B",
   greenCucumber: "#81B769",

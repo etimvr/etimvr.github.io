@@ -15,7 +15,7 @@ export function Header(props) {
   const { color } = props;
   return (
     <div
-      className={classes.header}
+      className={classes.outer}
       style={{ backgroundColor: color }}
       id="header"
     >

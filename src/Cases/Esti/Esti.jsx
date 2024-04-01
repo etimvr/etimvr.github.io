@@ -1,4 +1,5 @@
 import classes from "../../Cases/Esti/Esti.module.css";
+import typography from "../../typography.module.css";
 import intro from "../../assets/esti/intro.png";
 import whatWeDidFirst from "../../assets/esti/what-we-did-first.png";
 import sketches from "../../assets/esti/sketches.png";
@@ -63,13 +64,16 @@ export function Esti() {
             <img src={stars} alt="stars" />
           </div>
           <div
-            className={classes.text1}
+            className={typography.caseTitle}
             style={{ zIndex: 2, position: "relative" }}
           >
             Esti: Aesthetic Photo Editor
           </div>
           <div style={{ marginBottom: 12 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             The perfect content creator toolkit: an app with consistent vibes in
             mind.
           </div>
@@ -115,7 +119,7 @@ export function Esti() {
             <img src={heart} alt="heart" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative" }}
           >
             Quick look at Esti
@@ -153,7 +157,7 @@ export function Esti() {
             <img src={star} alt="star" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ maxWidth: 1274, zIndex: 2, position: "relative" }}
           >
             One of the most challenging and innovative projects for Esti was
@@ -162,9 +166,9 @@ export function Esti() {
           <div style={{ marginBottom: 42 }} />
           <div className={classes.columns}>
             <div style={{ width: "700px" }}>
-              <div className={classes.text7}>Problems</div>
+              <div className={typography.bigText}>Problems</div>
               <div style={{ marginBottom: 32 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 After thorough market research and with some feedback from users
                 I pinpointed a user need that Esti could solve: our users are
                 micro and macro influencers and they more often than not plan
@@ -182,13 +186,13 @@ export function Esti() {
                 <img src={star2} alt="star2" />
               </div>
               <div
-                className={classes.text7}
+                className={typography.bigText}
                 style={{ zIndex: 2, position: "relative" }}
               >
                 Goals
               </div>
               <div style={{ marginBottom: 32 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Provide our users with an easy-to-use handy tool for planning
                 social media posts. In the long run this feature should raise
                 app's retention which will indirectly affect the revenue.
@@ -196,9 +200,9 @@ export function Esti() {
             </div>
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3}>What we did first?</div>
+          <div className={typography.title}>What we did first?</div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             In order to validate our decisions and create a truly high-quality
             feature, we decided to start by analyzing competitors on the same
             field.
@@ -208,9 +212,9 @@ export function Esti() {
             <img src={whatWeDidFirst} width={1473} alt="what-we-did-first" />
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3}>Insight from product analyst</div>
+          <div className={typography.title}>Insight from product analyst</div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             Product Analytic and I looked for the data on CRs to export and to
             sharing to different social media platforms from our app. A short
             analysis showed that Esti users share their edits on social media
@@ -228,13 +232,13 @@ export function Esti() {
             <img src={weirdThing} alt="weird-thing" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative" }}
           >
             Some simple sketches...
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             After conducting research, I decided to try sketching a few simple
             drafts of the future feature. Visualizing in sketch format helps to
             break away from the constraints of the familiar design system and
@@ -246,12 +250,12 @@ export function Esti() {
             <img src={sketches} width={1420} alt="sketches" />
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3}>Research</div>
+          <div className={typography.title}>Research</div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.columns}>
             <div className={classes.item}>
               <div className={classes.box}>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   We conducted 5 user interviews, which allowed us to test our
                   hypotheses and validate solutions.
                   <br />
@@ -263,7 +267,7 @@ export function Esti() {
             </div>
             <div className={classes.item}>
               <div className={classes.box}>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   To ensure higher quality results from the interviews, I
                   created prototypes.
                   <br />
@@ -291,7 +295,7 @@ export function Esti() {
             <img src={research} alt="research" />
           </div>
           <div style={{ marginBottom: 16 }} />
-          <div className={classes.text5}>
+          <div className={typography.italic}>
             Why only 5 people? We used{" "}
             <a
               href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/"
@@ -302,7 +306,7 @@ export function Esti() {
             with conducting only 5 interviews.
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3}>Shortlist of the questions</div>
+          <div className={typography.title}>Shortlist of the questions</div>
           <div
             style={{
               position: "absolute",
@@ -316,33 +320,33 @@ export function Esti() {
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} height={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400} style={{ width: 1037 }}>
                 What are your thoughts on having a planner features in the photo
                 editor?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} height={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400} style={{ width: 1037 }}>
                 Do you understand how to use it?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} height={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400} style={{ width: 1037 }}>
                 Do you recognize what the calendar icon represents?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} height={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400} style={{ width: 1037 }}>
                 Do you understand the preview of the photo on the date in the
                 calendar?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} height={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Do you understand when the photo was posted to the Instagram?
               </div>
             </div>
@@ -358,8 +362,8 @@ export function Esti() {
             <img src={heart2} alt="heart2" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Esti user personas
           </div>
@@ -370,27 +374,35 @@ export function Esti() {
                 <img src={jackie} alt="jackie" />
               </div>
               <div>
-                <div className={classes.text7}>
+                <div className={typography.bigText}>
                   Jackie, 35 y.o., Austin, CA, USA
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Degree:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     MSc in Business Administration
                   </div>
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Socials:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     Instagram, Facebook, TikTok rarely
                   </div>
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2}>Experience in Editing:</div>
+                <div className={typography.normalText500}>
+                  Experience in Editing:
+                </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ fontWeight: 400 }}>
+                <div className={typography.normalText400}>
                   Lightroom (buy presets on Etsy to make IG page look in a
                   certain way), Facetune (only when I don’t look cute),
                   Videoleap (all Reels), Vixer (fonts), Lapse (vintage looks).
@@ -402,27 +414,35 @@ export function Esti() {
                 <img src={lauren} alt="lauren" />
               </div>
               <div>
-                <div className={classes.text7}>
+                <div className={typography.bigText}>
                   Lauren, 29 y.o., Los Angeles, CA, USA
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Degree:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     Berkeley, Digital Media
                   </div>
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Socials:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     Instagram, Facebook, Lemon8 recently
                   </div>
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2}>Experience in Editing:</div>
+                <div className={typography.normalText500}>
+                  Experience in Editing:
+                </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ fontWeight: 400 }}>
+                <div className={typography.normalText400}>
                   VSCO (almost same concept as Esti, but I like Esti more, cuz
                   of Retro looks), Lightroom Presets (cuz my photographers
                   friends use it).
@@ -434,27 +454,35 @@ export function Esti() {
                 <img src={massiel} alt="massiel" />
               </div>
               <div>
-                <div className={classes.text7}>
+                <div className={typography.bigText}>
                   Massiel, 30 y.o., San Francisco, CA, USA
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Degree:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     Tradional Chinese Medicine student
                   </div>
                 </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ display: "flex" }}>
+                <div
+                  className={typography.normalText500}
+                  style={{ display: "flex" }}
+                >
                   Socials:
                   <div style={{ fontWeight: 400, marginLeft: 12 }}>
                     Instagram, TikTok
                   </div>
                 </div>
                 <div style={{ marginBottom: 24 }} />
-                <div className={classes.text2}>Experience in Editing:</div>
+                <div className={typography.normalText500}>
+                  Experience in Editing:
+                </div>
                 <div style={{ marginBottom: 16 }} />
-                <div className={classes.text2} style={{ fontWeight: 400 }}>
+                <div className={typography.normalText400}>
                   I never feel I have one app I can commit. I usually move from
                   one to other. Videoleap - most consistent.
                 </div>
@@ -462,7 +490,7 @@ export function Esti() {
             </div>
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
             Here you can see some stats from the interviews
           </div>
           <div
@@ -479,7 +507,7 @@ export function Esti() {
             <img src={chart1} alt="chart1" />
           </div>
           <div style={{ marginBottom: 16 }} />
-          <div className={classes.text5}>
+          <div className={typography.italic}>
             Based on this chart, around 80% of users are interested in the
             planner.
           </div>
@@ -488,14 +516,14 @@ export function Esti() {
             <img src={chart2} alt="chart2" />
           </div>
           <div style={{ marginBottom: 16 }} />
-          <div className={classes.text5}>
+          <div className={typography.italic}>
             Roughly half of the users struggle to understand the current UX of
             the planner.
           </div>
           <div style={{ marginBottom: 64 }} />
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Summary
           </div>
@@ -513,7 +541,9 @@ export function Esti() {
             <img src={summary} alt="summary" />
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>A few other insights...</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            A few other insights...
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div
             className={classes.columns}
@@ -526,11 +556,17 @@ export function Esti() {
                 backgroundColor: colors.greenOlivine,
               }}
             >
-              <div className={classes.text6} style={{ color: colors.white }}>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center", color: colors.white }}
+              >
                 2/5
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ color: colors.white }}>
+              <div
+                className={typography.normalText400}
+                style={{ color: colors.white }}
+              >
                 Onboarding videos were too vague...
               </div>
             </div>
@@ -541,9 +577,14 @@ export function Esti() {
                 backgroundColor: colors.greenRock,
               }}
             >
-              <div className={classes.text6}>2/5</div>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center" }}
+              >
+                2/5
+              </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 I don't understand an icon in the app's library.
               </div>
             </div>
@@ -554,38 +595,53 @@ export function Esti() {
                 backgroundColor: colors.greenOlivine,
               }}
             >
-              <div className={classes.text6} style={{ color: colors.white }}>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center", color: colors.white }}
+              >
                 5/5
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ color: colors.white }}>
+              <div
+                className={typography.normalText400}
+                style={{ color: colors.white }}
+              >
                 I wish I knew about batch editing feature sooner!
               </div>
             </div>
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text7}>
+          <div className={typography.bigText}>
             After conducting research, I focused on the following points:
           </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.points}>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>1.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>1.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Improve the planner's UX. Conduct additional market research,
                 taking into account the results of user interviews.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>2.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>2.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Refine the content on the onboarding screens, as we noticed
                 issues among users during the interviews.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>3.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>3.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Change the zero state of the main screen, making it more
                 aesthetically pleasing and selecting non-stock looking content.
               </div>
@@ -593,7 +649,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 100 }} />
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Let’s start designing
@@ -608,7 +664,9 @@ export function Esti() {
             <img src={heart4} alt="heart4" />
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Planner Zero Screen</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Planner Zero Screen
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen1} alt="screen1" width={1420} />
@@ -624,8 +682,8 @@ export function Esti() {
             <img src={heart5} alt="heart5" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Entry Point
           </div>
@@ -634,13 +692,17 @@ export function Esti() {
             <img src={screen2} alt="screen2" width={1420} />
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>Planner Screen</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Planner Screen
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen3} alt="screen3" width={1420} />
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>Context Menu</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Context Menu
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen4} alt="screen4" width={1420} />
@@ -656,8 +718,8 @@ export function Esti() {
             <img src={bulletStar} alt="star" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: "2", position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: "2", position: "relative" }}
           >
             Quick Edit
           </div>
@@ -666,9 +728,14 @@ export function Esti() {
             <img src={screen5} alt="screen5" width={1420} />
           </div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>Redesigning Onboarding</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Redesigning Onboarding
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             After the user interviews, we found out that the current onboarding
             was unclear to users. Therefore, I redesigned it to make the content
             simpler, more aesthetic, and understandable.
@@ -685,11 +752,17 @@ export function Esti() {
                 backgroundColor: colors.greenOlivine,
               }}
             >
-              <div className={classes.text6} style={{ color: colors.white }}>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center", color: colors.white }}
+              >
                 2/5
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ color: colors.white }}>
+              <div
+                className={typography.normalText400}
+                style={{ color: colors.white }}
+              >
                 I didn't like the second onboarding screen. It has too much
                 specific information, and the animation is very fast.
               </div>
@@ -701,9 +774,14 @@ export function Esti() {
                 backgroundColor: colors.greenRock,
               }}
             >
-              <div className={classes.text6}>2/5</div>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center" }}
+              >
+                2/5
+              </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 I think the second onboarding screen shows B/A. I didn't notice
                 that there are 4 variations of the photo.
               </div>
@@ -715,11 +793,17 @@ export function Esti() {
                 backgroundColor: colors.greenOlivine,
               }}
             >
-              <div className={classes.text6} style={{ color: colors.white }}>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center", color: colors.white }}
+              >
                 5/5
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ color: colors.white }}>
+              <div
+                className={typography.normalText400}
+                style={{ color: colors.white }}
+              >
                 It took me about a minute to understand the meaning of the third
                 onboarding screen.
               </div>
@@ -731,9 +815,14 @@ export function Esti() {
                 backgroundColor: colors.greenRock,
               }}
             >
-              <div className={classes.text6}>2/5</div>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center" }}
+              >
+                2/5
+              </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 I thought the third onboarding screen was not only about
                 Copy/Paste presets but also about planning the IG grid.
               </div>
@@ -745,11 +834,17 @@ export function Esti() {
                 backgroundColor: colors.greenOlivine,
               }}
             >
-              <div className={classes.text6} style={{ color: colors.white }}>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center", color: colors.white }}
+              >
                 2/5
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ color: colors.white }}>
+              <div
+                className={typography.normalText400}
+                style={{ color: colors.white }}
+              >
                 I didn't like the image after opening the application; it looks
                 like a stock photo compared to the previous ones.
               </div>
@@ -761,9 +856,14 @@ export function Esti() {
                 backgroundColor: colors.greenRock,
               }}
             >
-              <div className={classes.text6}>1/5</div>
+              <div
+                className={typography.bigText}
+                style={{ textAlign: "center" }}
+              >
+                1/5
+              </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 On the third onboarding screen, make it 6 photos instead of 5;
                 the empty space is a bit annoying.
               </div>
@@ -788,7 +888,7 @@ export function Esti() {
                 <img src={before1} width={260} height={563} alt="before1" />
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text5}>Before</div>
+              <div className={typography.italic}>Before</div>
             </div>
             <div
               style={{
@@ -809,7 +909,7 @@ export function Esti() {
                 <source src={videoOgg} type="video/ogg" />
               </video>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text5}>After</div>
+              <div className={typography.italic}>After</div>
               <div
                 style={{
                   position: "absolute",
@@ -831,7 +931,7 @@ export function Esti() {
                 <img src={before2} width={260} height={563} alt="before2" />
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text5}>Before</div>
+              <div className={typography.italic}>Before</div>
             </div>
           </div>
           <div style={{ marginBottom: 100 }} />

@@ -1,4 +1,5 @@
 import classes from "./Prequel.module.css";
+import typography from "../../typography.module.css";
 import { Header } from "../../MainPage/Header/Header.jsx";
 import { Footer } from "../../MainPage/Footer/Footer.jsx";
 import { colors } from "../../colors.js";
@@ -14,7 +15,7 @@ import { ProjectInfo } from "../../components/ProjectInfo/ProjectInfo.jsx";
 import { WhatIDid } from "../../components/WhatIDid/WhatIDid.jsx";
 import bulletStar from "../../assets/common/bullet-star.svg";
 import bulletStarBlue from "../../assets/common/bullet-star-blue.svg";
-import jackie from "../../assets/esti/jackie.png";
+import personas from "../../assets/prequel/personas.png";
 import summary from "../../assets/prequel/summary.png";
 import screen1 from "../../assets/prequel/screen1.png";
 import screen2 from "../../assets/prequel/screen2.png";
@@ -67,13 +68,16 @@ export function Prequel() {
             <img src={hearts} alt="hearts" />
           </div>
           <div
-            className={classes.text1}
+            className={typography.caseTitle}
             style={{ zIndex: 2, position: "relative" }}
           >
             Prequel: Photo & Video Editor
           </div>
           <div style={{ marginBottom: 12 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             Photo and video editing app with an easy-to-use creative toolkit,
             aesthetic effects and filters.
           </div>
@@ -119,7 +123,7 @@ export function Prequel() {
             <img src={heart1} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative", textAlign: "center" }}
           >
             A bit of inspiration from Prequel
@@ -132,21 +136,21 @@ export function Prequel() {
           <div
             style={{
               position: "absolute",
-              marginLeft: "75px",
-              marginTop: "10px",
+              marginLeft: "-30px",
+              marginTop: "-15px",
             }}
           >
             <img src={flower} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
-            style={{ zIndex: 2, position: "relative", textAlign: "center" }}
+            className={typography.title}
+            style={{ zIndex: 2, position: "relative" }}
           >
             Multislider was one of Prequel's highly demanded and innovative
             projects
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             There's a large library of adjustments in Prequel now. The app
             offers a huge toolkit that allows users to make any edit imaginable.
             Adjustment tools are used for manual light and color correction. In
@@ -168,9 +172,9 @@ export function Prequel() {
 
           <div className={classes.columns}>
             <div style={{ width: "700px" }}>
-              <div className={classes.text3}>Problems</div>
+              <div className={typography.title}>Problems</div>
               <div style={{ marginBottom: 32 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Prequel's collection of adjustment tools has been steadily
                 growing over the years. There are some basic tools as contrast
                 and there are some unique once as vintage and aberration. Soon
@@ -179,9 +183,9 @@ export function Prequel() {
               </div>
             </div>
             <div style={{ width: "700px" }}>
-              <div className={classes.text3}>Goals</div>
+              <div className={typography.title}>Goals</div>
               <div style={{ marginBottom: 32 }} />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Improve navigation within the adjustment tools to create a
                 convenient, cutting-edge tool for flexible and fast editing
                 process. Increase conversion into project exports with adjust
@@ -200,7 +204,7 @@ export function Prequel() {
             <img src={star1} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative" }}
           >
             Hypotheses
@@ -208,16 +212,22 @@ export function Prequel() {
           <div style={{ marginBottom: 32 }} />
           <div className={classes.points}>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>1.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>1.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Users that edit photos often and rely on manual tweaking of
                 images want to have simultaneous access to several complimentary
                 tools to streamline their editing process.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>2.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>2.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Many Prequel's competitors have multislider with adjustments. It
                 was important to offer similar user experience.
               </div>
@@ -234,13 +244,13 @@ export function Prequel() {
             <img src={snowflake} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative" }}
           >
             Challenge
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             My main challenge was to design consistent interface and provide
             friendly user experience, improve navigation system, positioning of
             content within the edit and organize tool grouping.
@@ -256,13 +266,13 @@ export function Prequel() {
             <img src={lines} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ zIndex: 2, position: "relative" }}
           >
             Some simple sketches...
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             I've sketched several wireframe options by hand. This approach helps
             me to think more broadly and beyond the confines of the existing
             design system. After that, we discussed them with the product team
@@ -274,16 +284,18 @@ export function Prequel() {
             <img src={sketches} alt="sketches" width={900} height={857} />
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3}>Research</div>
+          <div className={typography.title}>Research</div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             I had a complex task ahead of me, so I conducted several types of
             research that helped me to address the current issues.
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>1. Tree Test</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            1. Tree Test
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             The{" "}
             <a
               href="https://www.nngroup.com/articles/tree-testing/"
@@ -297,20 +309,20 @@ export function Prequel() {
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Does the user understand how to navigate within the editor?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Does the user understand the logic behind categories and content
                 grouping?
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 Find the information they need quickly?
               </div>
             </div>
@@ -320,38 +332,47 @@ export function Prequel() {
             <img src={chart} alt="chart" />
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
             Tree Test analysis based on four criterias:
           </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.points}>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>1.</div>
-              <div className={classes.text2}>
+              <div className={typography.bigText}>1.</div>
+              <div className={typography.normalText400}>
                 Success rate - the percentage of tasks completed.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>2.</div>
-              <div className={classes.text2}>
+              <div className={typography.bigText}>2.</div>
+              <div className={typography.normalText400}>
                 The percentage of users who followed the happy path.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>3.</div>
-              <div className={classes.text2}>t - time.</div>
+              <div className={typography.bigText}>3.</div>
+              <div className={typography.normalText400}>t - time.</div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>4.</div>
-              <div className={classes.text2}>The user’s path:</div>
+              <div className={typography.bigText}>4.</div>
+              <div className={typography.normalText400}>The user’s path:</div>
             </div>
-            <div className={classes.text2} style={{ marginLeft: 42 }}>
+            <div
+              className={typography.normalText400}
+              style={{ marginLeft: 42 }}
+            >
               a. frequency;
             </div>
-            <div className={classes.text2} style={{ marginLeft: 42 }}>
+            <div
+              className={typography.normalText400}
+              style={{ marginLeft: 42 }}
+            >
               b. first click;
             </div>
-            <div className={classes.text2} style={{ marginLeft: 42 }}>
+            <div
+              className={typography.normalText400}
+              style={{ marginLeft: 42 }}
+            >
               c. response;
             </div>
           </div>
@@ -367,12 +388,12 @@ export function Prequel() {
           </div>
           <div style={{ display: "flex", gap: "8px", alignItems: "center" }}>
             <div
-              className={classes.text7}
+              className={typography.bigText}
               style={{ zIndex: 2, position: "relative" }}
             >
               Important:
             </div>
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               task output = Σ of all criteria.
             </div>
           </div>
@@ -386,7 +407,7 @@ export function Prequel() {
           >
             <img src={arrow2} alt="hearts" />
           </div>
-          <div className={classes.text6}>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
             Here you can see some stats from the interviews
           </div>
           <div style={{ marginBottom: 42 }} />
@@ -394,7 +415,7 @@ export function Prequel() {
             <img src={stats1} alt="stats1" />
           </div>
           <div style={{ marginBottom: 16 }} />
-          <div className={classes.text5}>
+          <div className={typography.italic}>
             Based on this chart, around 65% of users successfully completed the
             task.
           </div>
@@ -405,7 +426,7 @@ export function Prequel() {
                 <img src={stats2} alt="stats2" />
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text5}>
+              <div className={typography.italic}>
                 About 86% of users successfully completed the task.
               </div>
             </div>
@@ -414,7 +435,7 @@ export function Prequel() {
                 <img src={stats3} alt="stats3" />
               </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text5}>
+              <div className={typography.italic}>
                 About 78% of users successfully completed the task.
               </div>
             </div>
@@ -430,8 +451,8 @@ export function Prequel() {
             <img src={heart2} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Summary
           </div>
@@ -439,32 +460,34 @@ export function Prequel() {
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStarBlue} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 More than 60% of users successfully completed all tasks.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStarBlue} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 The average time to complete a task is 5 minutes.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStarBlue} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 The user is willing to search for the required tool for up to 15
                 seconds.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStarBlue} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 The user gets confused between color, light, and luminosity.
               </div>
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>2. Quantitative research</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            2. Quantitative research
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div
             style={{
@@ -476,66 +499,88 @@ export function Prequel() {
             <img src={cone} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Prequel user personas
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={classes.personaBox}>
             <div>
-              <img src={jackie} alt="jackie" />
+              <img src={personas} width={440} alt="personas" />
             </div>
             <div>
-              <div className={classes.text2}>Age:</div>
+              <div className={typography.normalText400}>Age:</div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ fontWeight: 400 }}>
+              <div
+                className={typography.normalText400}
+                style={{ fontWeight: 400 }}
+              >
                 22-35 y.o
               </div>
               <div style={{ marginBottom: 24 }} />
-              <div className={classes.text2}>Socials:</div>
+              <div className={typography.normalText400}>Socials:</div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ fontWeight: 400 }}>
+              <div
+                className={typography.normalText400}
+                style={{ fontWeight: 400 }}
+              >
                 Instagram, Facebook, TikTok
               </div>
               <div style={{ marginBottom: 24 }} />
-              <div className={classes.text2}>Experience in Editing:</div>
+              <div className={typography.normalText400}>
+                Experience in Editing:
+              </div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.text2} style={{ fontWeight: 400 }}>
+              <div
+                className={typography.normalText400}
+                style={{ fontWeight: 400 }}
+              >
                 Users with experience in professional photo/video editors who
                 actively used adjustments.
               </div>
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Summary</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Summary
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={summary} alt="summary" />
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text7}>
+          <div className={typography.bigText}>
             After conducting research, I focused on the following points:
           </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.points}>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>1.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>1.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Improve the UX of the multislider. Make it simpler, clearer, and
                 consistent with the rest of the application.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>2.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>2.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Solve the problem with buttons in the editor. Reduce their
                 number and make them more clear.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>3.</div>
-              <div className={classes.text2} style={{ width: "1379px" }}>
+              <div className={typography.bigText}>3.</div>
+              <div
+                className={typography.normalText400}
+                style={{ width: "1379px" }}
+              >
                 Implement the new multislider across all Prequel tools (beauty
                 tools, AI effects, filters).
               </div>
@@ -552,20 +597,24 @@ export function Prequel() {
             <img src={heart3} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Let’s start designing
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Multislider Design</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Multislider Design
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen1} alt="screen1" width={1420} />
           </div>
           <div style={{ marginBottom: 42 }} />
 
-          <div className={classes.text6}>Drag slider</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Drag slider
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen2} alt="screen2" width={1420} />
@@ -581,8 +630,8 @@ export function Prequel() {
             <img src={heart4} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             HSL Design
           </div>
@@ -592,7 +641,9 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
 
-          <div className={classes.text6}>Technical part</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Technical part
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen4} alt="screen4" width={1420} />
@@ -608,13 +659,16 @@ export function Prequel() {
             <img src={star1} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Results
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             <span>After conducting the A/B test, we noticed an </span>
             <span style={{ color: colors.greenOlivine }}>
               improvement in key metrics
@@ -625,15 +679,15 @@ export function Prequel() {
           <div className={classes.columns}>
             <div className={classes.item}>
               <div className={classes.box}>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>CR editor &gt; Edit Created </span>
                   <span style={{ color: colors.redSunglo }}>-0.41%</span>
                 </div>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>CR editor &gt; Edit Created With Adjust </span>
                   <span style={{ color: colors.redSunglo }}>-0.95%</span>
                 </div>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>Edits Per User </span>
                   <span style={{ color: colors.redSunglo }}>-3.44%</span>
                 </div>
@@ -641,15 +695,15 @@ export function Prequel() {
             </div>
             <div className={classes.item}>
               <div className={classes.box}>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>CR editor &gt; Edit Created </span>
                   <span style={{ color: colors.greenOlivine }}>+2.35%</span>
                 </div>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>CR editor &gt; Edit Created With Adjust </span>
                   <span style={{ color: colors.greenOlivine }}>+4.34%</span>
                 </div>
-                <div className={classes.text2}>
+                <div className={typography.normalText400}>
                   <span>Edits Per User </span>
                   <span style={{ color: colors.greenOlivine }}>+1.95%</span>
                 </div>
@@ -668,9 +722,7 @@ export function Prequel() {
             <img src={arrow} alt="arrow" />
           </div>
           <div style={{ marginBottom: 16 }} />
-          <div className={classes.text3} style={{ textAlign: "center" }}>
-            Tab bar redesign
-          </div>
+          <div className={typography.title}>Tab bar redesign</div>
           <div style={{ marginBottom: 64 }} />
           <div
             style={{
@@ -681,29 +733,33 @@ export function Prequel() {
           >
             <img src={exclamation} alt="hearts" />
           </div>
-          <div className={classes.text6}>Problem</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Problem
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             The discover page is currently overloaded with content. It is
             difficult for a user to find an item for the intended editing
             purpose.
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Users</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Users
+          </div>
           <div style={{ marginBottom: 32 }} />
 
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
-                casual istagrammer, tiktoker, micro-influencer: users, who will
+              <div className={typography.normalText400}>
+                casual instagrammer, tiktoker, micro-influencer: users, who will
                 more likely do quick edits, but are willing to express
                 creativity with more flexibility.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 blogger, influencer, filter enthusiasts: users, who likely to
                 catch-up with visual trends and are more likely to do long
                 processing in order to get something unique.
@@ -711,9 +767,11 @@ export function Prequel() {
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>User’s goal</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            User’s goal
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             As a Prequel user, I want to easily navigate on discover page so
             that I can find the content I need faster.
           </div>
@@ -728,84 +786,90 @@ export function Prequel() {
             <img src={star1} width={54} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Hypotheses
           </div>
           <div style={{ marginBottom: 32 }} />
           <div style={{ display: "flex", gap: "16px" }}>
             <img src={bulletStarBlue} width={24} alt="star" />
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               If we break down the tab bar into three categories (photo, video
               and AI), the distributions of content will be more comfortable for
               the users to navigate and find what is needed.
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Solution</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Solution
+          </div>
           <div style={{ marginBottom: 32 }} />
           <div className={classes.points}>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>1.</div>
-              <div className={classes.text2}>
+              <div className={typography.bigText}>1.</div>
+              <div className={typography.normalText400}>
                 Provide better breakdown and grouping of the available content;
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px", alignItems: "center" }}>
-              <div className={classes.text7}>2.</div>
-              <div className={classes.text2}>
+              <div className={typography.bigText}>2.</div>
+              <div className={typography.normalText400}>
                 Provide more intuitive navigation experience for the users;
               </div>
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Metrics to measure</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Metrics to measure
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text7}>Main</div>
+          <div className={typography.bigText}>Main</div>
           <div style={{ marginBottom: 16 }} />
 
           <div style={{ display: "flex", gap: "16px" }}>
             <img src={bulletStar} width={24} alt="star" />
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               Number of Prequels created from discover;
             </div>
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text7}>Secondary</div>
+          <div className={typography.bigText}>Secondary</div>
           <div style={{ marginBottom: 16 }} />
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 % of sessions with navigating to other than the main discover
                 tabs;
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>CR post view - editor open;</div>
+              <div className={typography.normalText400}>
+                CR post view - editor open;
+              </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 CR to trials/subs from discover;
               </div>
             </div>
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text7}>Counter Metrics</div>
+          <div className={typography.bigText}>Counter Metrics</div>
           <div style={{ marginBottom: 16 }} />
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 number of Prequels created not from discover;
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 CR to trials/subs not from discover;
               </div>
             </div>
@@ -821,13 +885,15 @@ export function Prequel() {
             <img src={heart5} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Let’s start designing
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>Tab bar redesign</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Tab bar redesign
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen5} alt="screen5" width={1420} />
@@ -843,13 +909,16 @@ export function Prequel() {
             <img src={star3} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Results
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             <span>The results of the A/B test were </span>
             <span style={{ color: colors.greenOlivine }}>very positive</span>
             <span>, so we decided to roll out feature to all users.</span>
@@ -859,31 +928,31 @@ export function Prequel() {
             className={classes.box}
             style={{ width: 900, marginLeft: "auto", marginRight: "auto" }}
           >
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               <span>Photo Edit Created from Discover &gt; </span>
               <span style={{ color: colors.greenOlivine }}>+9.45%</span>
             </div>
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               <span>Video Edit Created from Discover &gt; </span>
               <span style={{ color: colors.greenOlivine }}>+16.12%</span>
             </div>
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               <span>Users who clicked on any tab in the discover &gt; </span>
               <span style={{ color: colors.greenOlivine }}>+25.24%</span>
             </div>
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               <span>CR to trial / subsc &gt; </span>
               <span style={{ color: colors.greenOlivine }}>+10.8%</span>
             </div>
           </div>
           <div style={{ marginBottom: 100 }} />
-          <div className={classes.text3} style={{ textAlign: "center" }}>
-            Editor Archive
-          </div>
+          <div className={typography.title}>Editor Archive</div>
           <div style={{ marginBottom: 64 }} />
-          <div className={classes.text6}>Problem</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Problem
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             Prequel is an application that offers a wide range of tools and
             features. The main value of Prequel is that users can make any edit
             without leaving the application. Since 2018, the app has accumulated
@@ -899,8 +968,8 @@ export function Prequel() {
             <img src={heart6} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Users
           </div>
@@ -909,15 +978,15 @@ export function Prequel() {
           <div className={classes.shortlist}>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
-                casual istagrammer, tiktoker, micro-influencer: users, who will
+              <div className={typography.normalText400}>
+                casual instagrammer, tiktoker, micro-influencer: users, who will
                 more likely do quick edits, but are willing to express
                 creativity with more flexibility.
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
-              <div className={classes.text2}>
+              <div className={typography.normalText400}>
                 blogger, influencer, filter enthusiasts: users, who likely to
                 catch-up with visual trends and are more likely to do long
                 processing in order to get something unique.
@@ -925,9 +994,11 @@ export function Prequel() {
             </div>
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text6}>User’s goal</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            User’s goal
+          </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             As a Prequel user, I want to be able to find and use those effects
             and filters that suite my editing goal and style.
           </div>
@@ -942,15 +1013,15 @@ export function Prequel() {
             <img src={star3} width={54} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Hypotheses
           </div>
           <div style={{ marginBottom: 32 }} />
           <div style={{ display: "flex", gap: "16px" }}>
             <img src={bulletStarBlue} width={24} alt="star" />
-            <div className={classes.text2}>
+            <div className={typography.normalText400}>
               If we create a library of effects and filters where we place all
               the old and less relevant effects, we will simplify navigation in
               the editor and won't lose our audience.
@@ -967,13 +1038,13 @@ export function Prequel() {
             <img src={star4} alt="hearts" />
           </div>
           <div
-            className={classes.text6}
-            style={{ zIndex: 2, position: "relative" }}
+            className={typography.bigText}
+            style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Solution
           </div>
           <div style={{ marginBottom: 32 }} />
-          <div className={classes.text2}>
+          <div className={typography.normalText400}>
             As the editor already has numerous tools and options and tabs, I
             decided against creating a new tab. I analyzed what is already
             there, and decided to upgrade existing tool apart existing search
@@ -992,21 +1063,25 @@ export function Prequel() {
             <img src={heart7} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Let’s start designing
           </div>
           <div style={{ marginBottom: 42 }} />
 
-          <div className={classes.text6}>Search Redesign</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Search Redesign
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen6} alt="screen6" width={1420} />
           </div>
           <div style={{ marginBottom: 42 }} />
 
-          <div className={classes.text6}>Archive Screens</div>
+          <div className={typography.bigText} style={{ textAlign: "center" }}>
+            Archive Screens
+          </div>
           <div style={{ marginBottom: 42 }} />
           <div>
             <img src={screen7} alt="screen7" width={1420} />
@@ -1022,13 +1097,16 @@ export function Prequel() {
             <img src={star3} alt="hearts" />
           </div>
           <div
-            className={classes.text3}
+            className={typography.title}
             style={{ textAlign: "center", zIndex: 2, position: "relative" }}
           >
             Results
           </div>
           <div style={{ marginBottom: 42 }} />
-          <div className={classes.text2} style={{ textAlign: "center" }}>
+          <div
+            className={typography.normalText400}
+            style={{ textAlign: "center" }}
+          >
             <span>The A/B test showed an </span>
             <span style={{ color: colors.greenOlivine }}>
               increase in subscription retention{" "}
@@ -1038,10 +1116,10 @@ export function Prequel() {
               months). Our team managed to remove less trendy and refined
               effects and filters from the main editor without affecting churn
               rate dramatically and getting low rating from core users on the
-              App Store
+              App Store.
             </span>
           </div>
-          <div style={{ marginBottom: 69 }} />
+          <div style={{ marginBottom: 100 }} />
           <div style={{ justifyContent: "center", display: "flex", gap: 24 }}>
             <Button
               icon={arrowUpLeft}

@@ -1,4 +1,5 @@
 import classes from "./Content.module.css";
+import typography from "../../typography.module.css";
 import cloud from "../../assets/main/cloud.svg";
 import flowers from "../../assets/main/flowers.svg";
 import hearts from "../../assets/main/hearts.svg";
@@ -28,11 +29,16 @@ export function Content() {
         <div className={classes.star}>
           <img src={star} alt="star" />
         </div>
-        <div className={classes.text1}>from 2019 to ∞</div>
-        <div className={classes.text2}>
+        <div className={typography.smallText400}>from 2019 to ∞</div>
+        <div style={{ marginBottom: 12 }} />
+        <div className={typography.hugeText} style={{ position: "relative" }}>
           CURIOUS DESIGNER, STORYTELLER, DIGITAL CREATOR
         </div>
-        <div className={classes.text3}>
+        <div style={{ marginBottom: 24 }} />
+        <div
+          className={typography.normalText400}
+          style={{ position: "relative" }}
+        >
           <div>
             blending tech, art and community, my focus goes beyond beautiful
             interfaces.
@@ -42,6 +48,7 @@ export function Content() {
             company’s needs.
           </div>
         </div>
+        <div style={{ marginBottom: 44 }} />
         <div className={classes.buttons}>
           <Button
             icon={arrowUp}

@@ -67,62 +67,6 @@
   box-sizing: border-box;
 }
 
-.text1 {
-  font-family: DynaPuff;
-  font-size: 80px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-  text-align: center;
-}
-
-.text2 {
-  font-family: "IBM Plex Mono";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%;
-}
-
-.text3 {
-  font-family: DynaPuff;
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%;
-}
-
-.text4 {
-  font-family: "IBM Plex Mono";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 130%; /* 26px */
-}
-
-.text5 {
-  font-family: "IBM Plex Mono";
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 400;
-  text-align: center;
-}
-
-.text6 {
-  font-family: DynaPuff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  text-align: center;
-}
-
-.text7 {
-  font-family: DynaPuff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-}
-
 .points {
   display: flex;
   flex-direction: column;

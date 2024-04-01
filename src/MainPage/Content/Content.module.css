@@ -11,33 +11,6 @@
   max-width: 1674px;
 }
 
-.text1 {
-  font-family: "IBM Plex Mono";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 12px;
-  position: relative;
-}
-
-.text2 {
-  font-family: DynaPuff;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 24px;
-  position: relative;
-}
-
-.text3 {
-  font-family: "IBM Plex Mono";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  margin-bottom: 44px;
-  position: relative;
-}
-
 .cloud {
   position: absolute;
   right: calc(50% + 554px);

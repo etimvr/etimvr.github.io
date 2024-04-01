@@ -1,0 +1,89 @@
+.hugeText {
+  font-family: DynaPuff;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  color: #262626;
+}
+
+.caseTitle {
+  font-family: DynaPuff;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: center;
+  color: #262626;
+}
+
+.title {
+  font-family: DynaPuff;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%;
+  color: #262626;
+}
+
+.bigText {
+  font-family: DynaPuff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #262626;
+}
+
+.normalText500 {
+  font-family: "IBM Plex Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #262626;
+}
+
+.normalText400 {
+  font-family: "IBM Plex Mono";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #262626;
+}
+
+.smallText500 {
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  color: #262626;
+}
+
+.smallText400 {
+  font-family: "IBM Plex Mono";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #262626;
+}
+
+.tiny {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+  color: #262626;
+}
+
+.italic {
+  font-family: "IBM Plex Mono";
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+  color: #262626;
+}

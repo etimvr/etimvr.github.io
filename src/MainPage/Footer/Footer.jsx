@@ -1,4 +1,5 @@
 import classes from "../Footer/Footer.module.css";
+import typography from "../../typography.module.css";
 import flower from "../../assets/footer/footer-flower.svg";
 import PropTypes from "prop-types";
 
@@ -15,13 +16,21 @@ export function Footer(props) {
           <div className={classes.flower}>
             <img src={flower} alt="footer-flower" />
           </div>
-          <div className={classes.text1}>Get in Touch</div>
+          <div className={typography.hugeText} style={{ position: "relative" }}>
+            Get in Touch
+          </div>
           <div style={{ marginBottom: 48 }} />
           <div style={{ display: "flex" }}>
             <div style={{ marginRight: 100 }}>
-              <div className={classes.text2}>Email</div>
+              <div className={typography.tiny}>Email</div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.link}>
+              <div
+                className={typography.bigText}
+                style={{
+                  textDecoration: "underline",
+                  textDecorationSkipInk: "none",
+                }}
+              >
                 <a
                   href="mailto:sandraovershv@gmail.com"
                   style={{ color: "black" }}
@@ -31,9 +40,15 @@ export function Footer(props) {
               </div>
             </div>
             <div>
-              <div className={classes.text2}>Linkedin</div>
+              <div className={typography.tiny}>LinkedIn</div>
               <div style={{ marginBottom: 16 }} />
-              <div className={classes.link}>
+              <div
+                className={typography.bigText}
+                style={{
+                  textDecoration: "underline",
+                  textDecorationSkipInk: "none",
+                }}
+              >
                 <a
                   href="https://www.linkedin.com/in/alexandra-shvetsova-20822a221/"
                   style={{ color: "black" }}

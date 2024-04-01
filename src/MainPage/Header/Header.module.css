@@ -1,4 +1,4 @@
-.header {
+.outer {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -26,6 +26,7 @@
   font-family: "IBM Plex Mono";
   font-size: 20px;
   cursor: pointer;
+  color: #262626;
 }
 
 .clickableText:hover {

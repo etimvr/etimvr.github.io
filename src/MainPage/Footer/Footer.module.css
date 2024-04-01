@@ -11,28 +11,3 @@
   right: calc(50% - 8px);
   margin-top: -15px;
 }
-
-.text1 {
-  font-family: DynaPuff;
-  font-size: 100px;
-  font-style: normal;
-  font-weight: 400;
-  position: relative;
-}
-
-.text2 {
-  font-family: "IBM Plex Mono";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-}
-
-.link {
-  font-family: DynaPuff;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%;
-  text-decoration-line: underline;
-  text-decoration-skip-ink: none;
-}
