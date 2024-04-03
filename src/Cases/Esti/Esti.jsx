@@ -131,6 +131,8 @@ export function Esti() {
                 <img
                   src={image}
                   key={index}
+                  width={300}
+                  height={650}
                   className={classes.image}
                   alt={`Carousel ${index}`}
                 ></img>
@@ -140,6 +142,8 @@ export function Esti() {
                 <img
                   src={image}
                   key={images.length + index}
+                  width={300}
+                  height={650}
                   className={classes.image}
                   alt={`Carousel ${index}`}
                 ></img>
@@ -292,7 +296,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 64 }} />
           <div style={{ textAlign: "center" }}>
-            <img src={research} alt="research" />
+            <img src={research} width={862} alt="research" />
           </div>
           <div style={{ marginBottom: 16 }} />
           <div className={typography.italic}>
@@ -504,7 +508,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div style={{ textAlign: "center" }}>
-            <img src={chart1} alt="chart1" />
+            <img src={chart1} width={862} alt="chart1" />
           </div>
           <div style={{ marginBottom: 16 }} />
           <div className={typography.italic}>
@@ -513,7 +517,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div style={{ textAlign: "center" }}>
-            <img src={chart2} alt="chart2" />
+            <img src={chart2} width={862} alt="chart2" />
           </div>
           <div style={{ marginBottom: 16 }} />
           <div className={typography.italic}>
@@ -538,7 +542,7 @@ export function Esti() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div>
-            <img src={summary} alt="summary" />
+            <img src={summary} width={1420} alt="summary" />
           </div>
           <div style={{ marginBottom: 64 }} />
           <div className={typography.bigText} style={{ textAlign: "center" }}>

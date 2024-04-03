@@ -329,7 +329,7 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div>
-            <img src={chart} alt="chart" />
+            <img src={chart} width={1420} alt="chart" />
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={typography.bigText} style={{ textAlign: "center" }}>
@@ -412,7 +412,7 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div style={{ textAlign: "center" }}>
-            <img src={stats1} alt="stats1" />
+            <img src={stats1} width={900} alt="stats1" />
           </div>
           <div style={{ marginBottom: 16 }} />
           <div className={typography.italic}>
@@ -423,7 +423,7 @@ export function Prequel() {
           <div className={classes.columns}>
             <div>
               <div style={{ textAlign: "center" }}>
-                <img src={stats2} alt="stats2" />
+                <img src={stats2} width={700} alt="stats2" />
               </div>
               <div style={{ marginBottom: 16 }} />
               <div className={typography.italic}>
@@ -432,7 +432,7 @@ export function Prequel() {
             </div>
             <div>
               <div style={{ textAlign: "center" }}>
-                <img src={stats3} alt="stats3" />
+                <img src={stats3} width={700} alt="stats3" />
               </div>
               <div style={{ marginBottom: 16 }} />
               <div className={typography.italic}>
@@ -510,7 +510,7 @@ export function Prequel() {
               <img src={personas} width={440} alt="personas" />
             </div>
             <div>
-              <div className={typography.normalText400}>Age:</div>
+              <div className={typography.normalText500}>Age:</div>
               <div style={{ marginBottom: 16 }} />
               <div
                 className={typography.normalText400}
@@ -519,7 +519,7 @@ export function Prequel() {
                 22-35 y.o
               </div>
               <div style={{ marginBottom: 24 }} />
-              <div className={typography.normalText400}>Socials:</div>
+              <div className={typography.normalText500}>Socials:</div>
               <div style={{ marginBottom: 16 }} />
               <div
                 className={typography.normalText400}
@@ -528,7 +528,7 @@ export function Prequel() {
                 Instagram, Facebook, TikTok
               </div>
               <div style={{ marginBottom: 24 }} />
-              <div className={typography.normalText400}>
+              <div className={typography.normalText500}>
                 Experience in Editing:
               </div>
               <div style={{ marginBottom: 16 }} />
@@ -547,7 +547,7 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div>
-            <img src={summary} alt="summary" />
+            <img src={summary} width={1420} alt="summary" />
           </div>
           <div style={{ marginBottom: 42 }} />
           <div className={typography.bigText}>

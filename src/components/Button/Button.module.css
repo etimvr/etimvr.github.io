@@ -29,12 +29,14 @@
     transform 0.35s ease-out,
     opacity 0.35s ease-out;
   animation: unExpandCircle 0.35s ease-out forwards;
+  overflow: hidden;
 }
 
 .button:hover::after {
   opacity: 1;
   z-index: 0;
   animation: expandCircle 0.35s ease-out forwards; /* Animation to expand the circle */
+  overflow: hidden;
 }
 
 .button:active {
