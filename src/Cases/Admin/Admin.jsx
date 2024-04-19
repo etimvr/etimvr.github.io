@@ -232,10 +232,10 @@ export function Admin() {
         </div>
       </div>
       <Wave
-        waveColor={colors.blueAnakiwa}
+        waveColor={colors.blueLightAnakiwa}
         backgroundColor={colors.whiteTitan}
       />
-      <Footer color={colors.blueAnakiwa} />
+      <Footer color={colors.blueLightAnakiwa} />
     </>
   );
 }

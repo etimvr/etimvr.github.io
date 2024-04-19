@@ -1145,10 +1145,10 @@ export function Prequel() {
         </div>
       </div>
       <Wave
-        waveColor={colors.blueAnakiwa}
+        waveColor={colors.blueDarkAnakiwa}
         backgroundColor={colors.whiteTitan}
       />
-      <Footer color={colors.blueAnakiwa} />
+      <Footer color={colors.blueDarkAnakiwa} />
     </>
   );
 }
