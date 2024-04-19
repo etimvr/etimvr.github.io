@@ -1,6 +1,6 @@
 export const colors = {
   white: "#FFFFFF",
-  whiteIvory: "#FDFFF6",
+  whiteTitan: "#FEFEFF",
   whiteSoap: "#FFFAF6",
   beige: "#F6EFE7",
   blackPrimary: "#262626",
@@ -15,4 +15,5 @@ export const colors = {
   blueAnakiwa: "#A6C4FF",
   bluePattens: "#D5E3FF",
   blueSelago: "#E6F1FC",
+  blueZumthor: "#EDF6FF",
 };

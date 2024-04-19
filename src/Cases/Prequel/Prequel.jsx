@@ -54,7 +54,7 @@ export function Prequel() {
   const navigate = useNavigate();
   return (
     <>
-      <Header color={colors.whiteIvory} />
+      <Header color={colors.whiteTitan} />
 
       <div className={classes.page}>
         <div className={classes.inner}>
@@ -75,7 +75,7 @@ export function Prequel() {
           </div>
           <div style={{ marginBottom: 12 }} />
           <div
-            className={typography.normalText400}
+            className={typography.normalText500}
             style={{ textAlign: "center" }}
           >
             Photo and video editing app with an easy-to-use creative toolkit,
@@ -85,7 +85,7 @@ export function Prequel() {
           <div>
             <img src={intro} alt="intro" width={1420} />
           </div>
-          <div style={{ marginBottom: 79 }} />
+          <div style={{ marginBottom: 80 }} />
           <ProjectInfo
             role={"Senior Product Designer"}
             platform={"iOS / Android / Web"}
@@ -1146,7 +1146,7 @@ export function Prequel() {
       </div>
       <Wave
         waveColor={colors.blueAnakiwa}
-        backgroundColor={colors.whiteIvory}
+        backgroundColor={colors.whiteTitan}
       />
       <Footer color={colors.blueAnakiwa} />
     </>

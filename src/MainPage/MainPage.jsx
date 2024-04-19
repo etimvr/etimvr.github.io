@@ -12,13 +12,13 @@ export function MainPage() {
       <Content />
       <Wave
         waveColor={colors.greenCucumber}
-        backgroundColor={colors.whiteIvory}
+        backgroundColor={colors.whiteTitan}
         isRevert
       />
       <AboutMe />
       <Wave
         waveColor={colors.greenCucumber}
-        backgroundColor={colors.whiteIvory}
+        backgroundColor={colors.whiteTitan}
       />
       <Footer color={colors.greenCucumber} />
     </>
