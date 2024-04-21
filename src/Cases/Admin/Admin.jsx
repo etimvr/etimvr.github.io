@@ -47,10 +47,10 @@ export function Admin() {
           </div>
           <div style={{ marginBottom: 12 }} />
           <div
-            className={typography.normalText500}
+            className={typography.normalText400}
             style={{ textAlign: "center" }}
           >
-            The convenient service that optimizes working with various types of
+            The service that streamlines working flow with various types of
             content within applications.
           </div>
           <div style={{ marginBottom: 32 }} />
@@ -73,10 +73,10 @@ export function Admin() {
             color={colors.blueZumthor}
             text={
               <>
-                In this project I worked as a product designer, my main task was
+                On this project I worked as a product designer, my main task was
                 to create a convenient and multifunctional service that helps
-                all company employees to work efficiently and quickly with a
-                large amount of internal data.
+                all company employees to work efficiently and quickly with large
+                amount of internal data.
                 <br />
                 <br />I collaborated with founders, product managers, marketing
                 team, research team, development and analytics team.
@@ -112,7 +112,7 @@ export function Admin() {
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
               <div className={typography.normalText400}>
-                Tracking general metrics across the entire product;
+                Tracking general metrics across the entire product
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
@@ -124,14 +124,14 @@ export function Admin() {
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
               <div className={typography.normalText400}>
-                Conducting A/B tests, rolling out features into release
+                Conducting A/B tests, rolling out features
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
               <img src={bulletStar} width={24} alt="star" />
               <div className={typography.normalText400}>
-                Quickly changing content within the application without
-                development resource
+                Quickly changing content within the applications without
+                additional development
               </div>
             </div>
           </div>
@@ -157,11 +157,12 @@ export function Admin() {
           <div style={{ marginBottom: 42 }} />
           <div className={typography.bigText}>SDI Admin Panel</div>
           <div style={{ marginBottom: 32 }} />
-          <div className={typography.normalText500}>
-            SDI allows managing the user interface from the backend. The main
-            principle is to minimize responsibility for display attributes
-            (padding, colors, layouts), but to control the logical components on
-            the page and the structure of business models.
+          <div className={typography.normalText400}>
+            SDI (server-driven interface) allows to manage the user interface
+            from the backend. The main principle is to minimize responsibility
+            for display attributes (padding, colors, layouts), but to control
+            the logical components on the page and the structure of business
+            models.
           </div>
           <div style={{ marginBottom: 42 }} />
           <div>
@@ -171,8 +172,8 @@ export function Admin() {
 
           <div className={typography.bigText}>User Admin Panel</div>
           <div style={{ marginBottom: 32 }} />
-          <div className={typography.normalText500}>
-            User admin panel allows managing the roles and statuses of all
+          <div className={typography.normalText400}>
+            User admin panel allows to manage the roles and statuses of all
             application users. We can change the role (artist, ambassador or
             user), change the status (ban, unban), view the registration date,
             and user personal information.
@@ -199,11 +200,11 @@ export function Admin() {
           </div>
           <div style={{ marginBottom: 42 }} />
           <div
-            className={typography.normalText500}
+            className={typography.normalText400}
             style={{ textAlign: "center" }}
           >
             Сreation and development of various admin panels help us to quickly
-            change content within the application, manage our users, track our
+            change content within the applications, manage our users, track our
             general metrics, and analyze data.
           </div>
           <div style={{ marginBottom: 100 }} />
