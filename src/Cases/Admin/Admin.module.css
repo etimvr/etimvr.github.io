@@ -1,5 +1,5 @@
 .page {
-  background-color: #FEFEFF;
+  background-color: #fefeff;
   padding-top: 54px;
   display: flex;
   justify-content: center;
@@ -9,7 +9,6 @@
   max-width: 1420px;
 }
 
-
 .shortlist {
   display: inline-flex;
   flex-direction: column;
@@ -17,8 +16,7 @@
   gap: 20px;
 }
 
-
-.outer img{
+.outer img {
   width: 100vw;
   max-width: 1920px;
   overflow: hidden;
