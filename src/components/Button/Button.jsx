@@ -16,7 +16,10 @@ export function Button(props) {
     <div
       className={classes.button}
       onClick={onClick}
-      style={{ flexDirection: isIconOnLeftSide ? "row-reverse" : "row" }}
+      style={{
+        flexDirection: isIconOnLeftSide ? "row-reverse" : "row",
+        zIndex: 1,
+      }}
     >
       <div className={typography.smallText500} style={{ zIndex: 1 }}>
         {children}
