@@ -5,7 +5,6 @@ import { Footer } from "../../MainPage/Footer/Footer.jsx";
 import { colors } from "../../colors.js";
 import { Wave } from "../../components/Wave/Wave.jsx";
 import { Button } from "../../components/Button/Button.jsx";
-import arrowUp from "../../assets/common/arrow-up.svg";
 import arrowUpLeft from "../../assets/common/arrow-up-left.svg";
 import { routes } from "../../routes.js";
 import { useNavigate } from "react-router-dom";

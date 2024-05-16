@@ -325,9 +325,7 @@ export function AboutMe() {
               className={classes.picture3}
               style={{ backgroundColor: colors.pink }}
             >
-              <div
-                className={classes.other}
-              />
+              <div className={classes.other} />
             </div>
             <div className={typography.bigText}>Other works...</div>
             <div style={{ marginBottom: 8 }} />
