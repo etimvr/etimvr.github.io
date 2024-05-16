@@ -13,7 +13,6 @@ function App() {
         <Route path={routes.esti} element={<Esti />} />
         <Route path={routes.prequel} element={<Prequel />} />
         <Route path={routes.admin} element={<Admin></Admin>} />
-        <Route path={routes.otherWorks} element={<></>} />
         <Route path="*" element={<div>404</div>} />
       </Routes>
     </>

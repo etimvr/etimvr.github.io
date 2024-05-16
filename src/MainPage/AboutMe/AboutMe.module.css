@@ -222,7 +222,6 @@
 
 .other:hover {
   background-image: url("../../assets/works/hover-other.png");
-  cursor: pointer;
   animation: showOtherHover 0.3s forwards;
 }
 

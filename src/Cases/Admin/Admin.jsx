@@ -219,15 +219,6 @@ export function Admin() {
             >
               PREVIOUS CASE
             </Button>
-            <Button
-              icon={arrowUp}
-              onClick={() => {
-                navigate(routes.otherWorks);
-                window.scrollTo(0, 0);
-              }}
-            >
-              NEXT CASE
-            </Button>
           </div>
           <div style={{ marginBottom: 130 }} />
         </div>

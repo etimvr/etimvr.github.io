@@ -327,10 +327,6 @@ export function AboutMe() {
             >
               <div
                 className={classes.other}
-                onClick={async () => {
-                  await navigate(routes.otherWorks);
-                  window.scrollTo(0, 0);
-                }}
               />
             </div>
             <div className={typography.bigText}>Other works...</div>

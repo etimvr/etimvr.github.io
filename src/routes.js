@@ -3,5 +3,4 @@ export const routes = {
   esti: "/esti/",
   prequel: "/prequel/",
   admin: "/admin/",
-  otherWorks: "/other/",
 };
