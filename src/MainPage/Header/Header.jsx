@@ -61,7 +61,14 @@ export function Header(props) {
               RESUME
             </a>
           </div>
-          <Button>CONTACT ME</Button>
+          <Button
+            onClick={async () => {
+              await navigate(routes.main);
+              scrollToId("contacts");
+            }}
+          >
+            CONTACT ME
+          </Button>
         </div>
       </div>
     </div>

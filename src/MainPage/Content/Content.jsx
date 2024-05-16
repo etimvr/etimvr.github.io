@@ -58,7 +58,14 @@ export function Content() {
           >
             MY WORK
           </Button>
-          <Button icon={smile}>CONTACT ME</Button>
+          <Button
+            icon={smile}
+            onClick={async () => {
+              scrollToId("contacts");
+            }}
+          >
+            CONTACT ME
+          </Button>
         </div>
       </div>
     </div>

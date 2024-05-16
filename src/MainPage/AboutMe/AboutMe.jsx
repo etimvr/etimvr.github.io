@@ -152,7 +152,9 @@ export function AboutMe() {
             </div>
             <div style={{ marginBottom: 32 }} />
 
-            <div className={typography.bigText}>Contacts</div>
+            <div className={typography.bigText} id="contacts">
+              Contacts
+            </div>
             <div
               style={{
                 position: "absolute",
