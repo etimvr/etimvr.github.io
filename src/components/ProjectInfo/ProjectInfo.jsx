@@ -16,19 +16,19 @@ export function ProjectInfo(props) {
       <div>
         <div className={typography.title}>My Role</div>
         <div style={{ marginBottom: 32 }} />
-        <div className={typography.smallText400}>{role}</div>
+        <div className={typography.smallText500}>{role}</div>
       </div>
       <div>
         <div className={typography.title}>Platform</div>
         <div style={{ marginBottom: 32 }} />
-        <div className={typography.smallText400}>{platform}</div>
+        <div className={typography.smallText500}>{platform}</div>
       </div>
       <div>
         <div className={typography.title}>My Team</div>
         <div style={{ marginBottom: 32 }} />
         <div className={classes.teamShortlist}>
           {team.map((teammate, index) => (
-            <div className={typography.smallText400} key={index}>
+            <div className={typography.smallText500} key={index}>
               {teammate}
             </div>
           ))}

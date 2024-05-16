@@ -47,7 +47,7 @@ export function Admin() {
           </div>
           <div style={{ marginBottom: 12 }} />
           <div
-            className={typography.normalText400}
+            className={typography.normalText500}
             style={{ textAlign: "center" }}
           >
             The service that streamlines working flow with various types of
