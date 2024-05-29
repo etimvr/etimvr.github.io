@@ -8,19 +8,20 @@ Wave.propTypes = {
 
 export function Wave(props) {
   const { waveColor, backgroundColor, isRevert = false } = props;
+  const waveHeight = 42;
 
   return (
     <div
       style={{
         display: "block",
-        height: 41, // 1px less than svg to fix weird gap before/after svg
+        height: waveHeight -1, // 1px less than svg to fix weird gap before/after svg
         backgroundColor: backgroundColor,
         transform: isRevert ? "rotate(180deg)" : "none",
       }}
     >
       <svg
         width="100%"
-        height="42"
+        height={waveHeight}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
