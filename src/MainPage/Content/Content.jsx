@@ -32,7 +32,7 @@ export function Content() {
         <div className={typography.smallText400}>from 2019 to ∞</div>
         <div style={{ marginBottom: 12 }} />
         <div className={typography.hugeText} style={{ position: "relative" }}>
-          CURIOUS DESIGNER, STORYTELLER, DIGITAL CREATOR
+          CURIOUS DESIGNER, STORYTELLER, DIGITAL CREATOR!
         </div>
         <div style={{ marginBottom: 24 }} />
         <div
