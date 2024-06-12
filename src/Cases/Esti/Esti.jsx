@@ -96,6 +96,7 @@ export function Esti() {
           <div style={{ marginBottom: 100 }} />
           <WhatIDid
             color={colors.greenRock}
+            borderRadius={12}
             text={
               <>
                 On this project I worked as a product designer, handling various
